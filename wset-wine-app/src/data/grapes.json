@@ -1,0 +1,1633 @@
+[
+  {
+    "id": "riesling",
+    "name": "Riesling",
+    "nameCN": "雷司令",
+    "color": "White",
+    "climate": {
+      "label": "Cool–Moderate",
+      "min": "L",
+      "max": "M"
+    },
+    "acidity": "High",
+    "tannin": null,
+    "sweetness": "Dry-Sweet",
+    "body": "Light-Full",
+    "oak": "No",
+    "canAge": true,
+    "ageNotes": "Petrol; Honey;",
+    "flavors": {
+      "unripe": [
+        "Green Fruit",
+        "Cirtus",
+        "Flora"
+      ],
+      "ripe": [
+        "Stone Fruit"
+      ],
+      "extraRipe": [
+        "Tropical fruit"
+      ]
+    },
+    "blend": "Rare",
+    "blendGrape": null,
+    "botrytis": true,
+    "sparkling": false,
+    "notes": "Can be dry to sweet; often aromatic;  Late harvest to make ice wine;",
+    "locations": [
+      {
+        "country": "Germany",
+        "regions": [
+          "Mosel",
+          "Rheingau",
+          "Pfalz"
+        ]
+      },
+      {
+        "country": "France",
+        "regions": [
+          "Alsace"
+        ]
+      },
+      {
+        "country": "Australia",
+        "regions": [
+          "Eden Valley",
+          "Clare Valley"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "chenin-blanc",
+    "name": "Chenin Blanc",
+    "nameCN": "白诗南",
+    "color": "White",
+    "climate": {
+      "label": "Cool–Warm",
+      "min": "L",
+      "max": "H"
+    },
+    "acidity": "High",
+    "tannin": null,
+    "sweetness": "Dry-Sweet",
+    "body": null,
+    "oak": "Both",
+    "canAge": true,
+    "ageNotes": "Honey; Dried Fruit",
+    "flavors": {
+      "unripe": [
+        "Green Fruit",
+        "Cirtus"
+      ],
+      "ripe": [
+        "Stone Fruit"
+      ],
+      "extraRipe": [
+        "Tropical fruit"
+      ]
+    },
+    "blend": "Yes",
+    "blendGrape": null,
+    "botrytis": true,
+    "sparkling": false,
+    "notes": "Can be dry, sweet,",
+    "locations": [
+      {
+        "country": "France",
+        "regions": [
+          "Loire Valley"
+        ],
+        "subregions": [
+          "Vouvray"
+        ]
+      },
+      {
+        "country": "South Africa",
+        "regions": [
+          "Western Cape"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "semillon",
+    "name": "Semillon",
+    "nameCN": "赛美蓉",
+    "color": "White",
+    "climate": {
+      "label": "Moderate–Warm",
+      "min": "M",
+      "max": "H"
+    },
+    "acidity": "Medium–High",
+    "tannin": null,
+    "sweetness": "Dry-Sweet",
+    "body": "Light-Full",
+    "oak": "Both",
+    "canAge": true,
+    "ageNotes": "Honey; Toast; Nut; Beeswax",
+    "flavors": {
+      "unripe": [
+        "Apple",
+        "Lemon",
+        "Grass"
+      ],
+      "ripe": [],
+      "extraRipe": [
+        "Dried Fruit",
+        "Nuts",
+        "Beeswax",
+        "Honey"
+      ]
+    },
+    "blend": "Yes",
+    "blendGrape": "Sauvignon Blanc",
+    "botrytis": true,
+    "sparkling": false,
+    "notes": "Important in dry and sweet styles; Botrytis;",
+    "locations": [
+      {
+        "country": "France",
+        "regions": [
+          "Bordeaux"
+        ],
+        "subregions": [
+          "Sauternes"
+        ]
+      },
+      {
+        "country": "Australia",
+        "regions": [
+          "Hunter Valley",
+          "Barossa Valley"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "furmint",
+    "name": "Furmint",
+    "nameCN": "富尔民特",
+    "color": "White",
+    "climate": {
+      "label": "Moderate",
+      "min": "M",
+      "max": "M"
+    },
+    "acidity": "High",
+    "tannin": null,
+    "sweetness": "Dry-Sweet",
+    "body": null,
+    "oak": "Both",
+    "canAge": true,
+    "ageNotes": "Dried fruit; Caramel; Nuts",
+    "flavors": {
+      "unripe": [],
+      "ripe": [],
+      "extraRipe": []
+    },
+    "blend": "Rare",
+    "blendGrape": null,
+    "botrytis": true,
+    "sparkling": false,
+    "notes": "Usually Very high acidity; important for Tokaji sweet wines; puttonyos (measure sweet level); Botrytis",
+    "locations": [
+      {
+        "country": "Hungary",
+        "regions": [
+          "Tokaj"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "chardonnay",
+    "name": "Chardonnay",
+    "nameCN": "霞多丽",
+    "color": "White",
+    "climate": {
+      "label": "Cool–Warm",
+      "min": "L",
+      "max": "H"
+    },
+    "acidity": "Medium–High",
+    "tannin": null,
+    "sweetness": "Dry",
+    "body": "Light-Full",
+    "oak": "Yes",
+    "canAge": true,
+    "ageNotes": "Mushroom; Hazelnut",
+    "flavors": {
+      "unripe": [
+        "Green Fruit",
+        "Cirtus",
+        "Wet Stone"
+      ],
+      "ripe": [
+        "Stone Fruit"
+      ],
+      "extraRipe": [
+        "Tropical fruit"
+      ]
+    },
+    "blend": "Yes",
+    "blendGrape": "Chenin Blanc",
+    "botrytis": false,
+    "sparkling": false,
+    "notes": "Very versatile;  winemaking options(Adjustments, Maloactic conversion, Lees contact, Oak)",
+    "locations": [
+      {
+        "country": "France",
+        "regions": [
+          "A: Burgundy(AOC)",
+          "B: Languedoc(PGI)"
+        ],
+        "subregions": [
+          "A: Chablis",
+          "Côte de Beaune(Meursault",
+          "Puligny-Montrachet",
+          ")",
+          "Mâconnais(Mâcon",
+          "Pouilly-Fuissé)",
+          "B: Languedoc-Roussillon"
+        ]
+      },
+      {
+        "country": "USA",
+        "regions": [
+          "A:California",
+          "B: Oregon"
+        ],
+        "subregions": [
+          "A: Napa Valley",
+          "Santa barbara county",
+          "Sonoma (Los Carneros)"
+        ]
+      },
+      {
+        "country": "Australia",
+        "regions": [
+          "Adelaide Hills",
+          "Yarra Valley",
+          "Margaret Valley"
+        ]
+      },
+      {
+        "country": "New Zealand",
+        "regions": [
+          "Marlborough",
+          "Hawke’s Bay"
+        ]
+      },
+      {
+        "country": "Chile",
+        "regions": [
+          "Casablanca Valley",
+          "Central Valley"
+        ]
+      },
+      {
+        "country": "South Africa",
+        "regions": [
+          "Western Cape",
+          "Walker Bay"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sauvignon-blanc",
+    "name": "Sauvignon Blanc",
+    "nameCN": "长相思",
+    "color": "White",
+    "climate": {
+      "label": "Cool–Moderate",
+      "min": "L",
+      "max": "M"
+    },
+    "acidity": "High",
+    "tannin": null,
+    "sweetness": "Dry",
+    "body": "Light-Medium",
+    "oak": "no",
+    "canAge": false,
+    "ageNotes": null,
+    "flavors": {
+      "unripe": [
+        "Herbaceous(Grass",
+        "Green bell pepper",
+        ")",
+        "Green Fruits"
+      ],
+      "ripe": [
+        "Lemon",
+        "Grapefruit",
+        "Stone Fruit"
+      ],
+      "extraRipe": [
+        "Tropical fruit(Passion fruit",
+        ")"
+      ]
+    },
+    "blend": "Rare",
+    "blendGrape": "Chenin Blanc",
+    "botrytis": false,
+    "sparkling": false,
+    "notes": "Aromatic; pungent styles common",
+    "locations": [
+      {
+        "country": "France",
+        "regions": [
+          "A: Loire Valley",
+          "B: Bordeaux",
+          "C: Languedoc"
+        ],
+        "subregions": [
+          "A: Sancerre",
+          "Pouilly-Fumé",
+          "Touraine",
+          "B: Grave",
+          "Pessac-Leognan",
+          "C: Languedoc-Roussillon"
+        ]
+      },
+      {
+        "country": "USA",
+        "regions": [
+          "Napa Valley"
+        ]
+      },
+      {
+        "country": "Australia",
+        "regions": [
+          "Margaret Valley",
+          "Adelaide Hills"
+        ]
+      },
+      {
+        "country": "New Zealand",
+        "regions": [
+          "Marlborough"
+        ]
+      },
+      {
+        "country": "Chile",
+        "regions": [
+          "Casablanca Valley",
+          "Central Valley"
+        ]
+      },
+      {
+        "country": "South Africa",
+        "regions": [
+          "Constantia",
+          "Elgin"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pinot-grigio",
+    "name": "Pinot Grigio",
+    "nameCN": "灰皮诺(Italy)",
+    "color": "White",
+    "climate": {
+      "label": "Cool–Moderate",
+      "min": "L",
+      "max": "M"
+    },
+    "acidity": "Medium–High",
+    "tannin": null,
+    "sweetness": "Dry",
+    "body": "Light",
+    "oak": "no",
+    "canAge": true,
+    "ageNotes": "Honey; Ginger",
+    "flavors": {
+      "unripe": [
+        "Lemon",
+        "Green pear"
+      ],
+      "ripe": [
+        "Pear",
+        "Apple"
+      ],
+      "extraRipe": [
+        "Peach",
+        "Spice"
+      ]
+    },
+    "blend": "Rare",
+    "blendGrape": null,
+    "botrytis": false,
+    "sparkling": false,
+    "notes": "Styles range from light neutral to richer aromatic",
+    "locations": [
+      {
+        "country": "Italy",
+        "regions": [
+          "Veneto",
+          "Delle Venezie"
+        ]
+      },
+      {
+        "country": "France",
+        "regions": [
+          "Alsace"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pinot-gris",
+    "name": "Pinot Gris",
+    "nameCN": "灰皮诺(France)",
+    "color": "White",
+    "climate": {
+      "label": "Cool–Moderate",
+      "min": "L",
+      "max": "M"
+    },
+    "acidity": "Medium",
+    "tannin": null,
+    "sweetness": "Dry-Off Dry",
+    "body": "Full",
+    "oak": "no",
+    "canAge": true,
+    "ageNotes": "Honey; Ginger",
+    "flavors": {
+      "unripe": [
+        "Lemon"
+      ],
+      "ripe": [
+        "Stone Fruit"
+      ],
+      "extraRipe": [
+        "Tropical fruit"
+      ]
+    },
+    "blend": "Rare",
+    "blendGrape": null,
+    "botrytis": false,
+    "sparkling": false,
+    "notes": null,
+    "locations": [
+      {
+        "country": "France",
+        "regions": [
+          "Alsace"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cortese",
+    "name": "Cortese",
+    "nameCN": "科特斯",
+    "color": "White",
+    "climate": {
+      "label": null,
+      "min": null,
+      "max": null
+    },
+    "acidity": "High",
+    "tannin": null,
+    "sweetness": "Dry",
+    "body": "Light",
+    "oak": "no",
+    "canAge": false,
+    "ageNotes": null,
+    "flavors": {
+      "unripe": [
+        "Floral",
+        "Green Fruit",
+        "Citrus"
+      ],
+      "ripe": [],
+      "extraRipe": []
+    },
+    "blend": "Rare",
+    "blendGrape": null,
+    "botrytis": false,
+    "sparkling": false,
+    "notes": "Typically light-bodied and fresh",
+    "locations": [
+      {
+        "country": "Italy",
+        "regions": [
+          "Piedmont"
+        ],
+        "subregions": [
+          "Gavi"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "garganega",
+    "name": "Garganega",
+    "nameCN": "加尔加内加",
+    "color": "White",
+    "climate": {
+      "label": null,
+      "min": null,
+      "max": null
+    },
+    "acidity": "High",
+    "tannin": null,
+    "sweetness": "Dry",
+    "body": "M",
+    "oak": "no",
+    "canAge": false,
+    "ageNotes": "Honey; Almond",
+    "flavors": {
+      "unripe": [
+        "Green Fruit",
+        "Citrus",
+        "Stone Fruit"
+      ],
+      "ripe": [],
+      "extraRipe": [
+        "Honey",
+        "Almond"
+      ]
+    },
+    "blend": "Rare",
+    "blendGrape": null,
+    "botrytis": false,
+    "sparkling": false,
+    "notes": "Main grape of Soave",
+    "locations": [
+      {
+        "country": "Italy",
+        "regions": [
+          "Veneto"
+        ],
+        "subregions": [
+          "Soave",
+          "Soave Classio",
+          "Recioto Di Saove"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "verdicchio",
+    "name": "Verdicchio",
+    "nameCN": "维蒂基奥",
+    "color": "White",
+    "climate": {
+      "label": null,
+      "min": null,
+      "max": null
+    },
+    "acidity": "High",
+    "tannin": null,
+    "sweetness": "Dry",
+    "body": "M",
+    "oak": "no",
+    "canAge": false,
+    "ageNotes": "Honey; Almond",
+    "flavors": {
+      "unripe": [
+        "Green Fruit",
+        "Citrus",
+        "Herbal(Fennel)"
+      ],
+      "ripe": [],
+      "extraRipe": [
+        "Honey",
+        "Nuts"
+      ]
+    },
+    "blend": "Rare",
+    "blendGrape": "Appassimento",
+    "botrytis": false,
+    "sparkling": false,
+    "notes": "High acidity; can age better than many Italian whites",
+    "locations": [
+      {
+        "country": "Italy",
+        "regions": [
+          "Marche"
+        ],
+        "subregions": [
+          "Verdicchio dei Castelli di Jesi"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fiano",
+    "name": "Fiano",
+    "nameCN": "菲亚诺",
+    "color": "White",
+    "climate": {
+      "label": null,
+      "min": null,
+      "max": null
+    },
+    "acidity": "Medium",
+    "tannin": null,
+    "sweetness": "Dry",
+    "body": "Medium-Full",
+    "oak": "Both",
+    "canAge": false,
+    "ageNotes": "Honey;",
+    "flavors": {
+      "unripe": [
+        "Stone Fruit",
+        "Tropical Fruit"
+      ],
+      "ripe": [],
+      "extraRipe": [
+        "Honey"
+      ]
+    },
+    "blend": "Rare",
+    "blendGrape": null,
+    "botrytis": false,
+    "sparkling": false,
+    "notes": "Fuller body; often aromatic; can age",
+    "locations": [
+      {
+        "country": "Italy",
+        "regions": [
+          "Campania"
+        ],
+        "subregions": [
+          "Fiano di Avellino"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "gewürztraminer",
+    "name": "Gewürztraminer",
+    "nameCN": "琼瑶浆",
+    "color": "White",
+    "climate": {
+      "label": "Cool–Moderate",
+      "min": "L",
+      "max": "M"
+    },
+    "acidity": "Low–Medium",
+    "tannin": null,
+    "sweetness": "Dry-Sweet",
+    "body": "Full",
+    "oak": "Both",
+    "canAge": true,
+    "ageNotes": "Dried Fruit; Honey",
+    "flavors": {
+      "unripe": [
+        "Floral(Rose)",
+        "Tropical Fruit(Lychee)",
+        "Stone Fruit(Peach, apricot)"
+      ],
+      "ripe": [],
+      "extraRipe": [
+        "Dried Fruit",
+        "Honey"
+      ]
+    },
+    "blend": "Rare",
+    "blendGrape": null,
+    "botrytis": false,
+    "sparkling": false,
+    "notes": "Highly aromatic; naturally deep colour; low acidity",
+    "locations": [
+      {
+        "country": "France",
+        "regions": [
+          "Alsace"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "viognier",
+    "name": "Viognier",
+    "nameCN": "维欧尼",
+    "color": "White",
+    "climate": {
+      "label": "Moderate",
+      "min": "M",
+      "max": "M"
+    },
+    "acidity": "Low–Medium",
+    "tannin": null,
+    "sweetness": "Dry",
+    "body": "Medium-Full",
+    "oak": "Both",
+    "canAge": false,
+    "ageNotes": null,
+    "flavors": {
+      "unripe": [
+        "Floral",
+        "Stone Fruit(Peach, apricot)"
+      ],
+      "ripe": [],
+      "extraRipe": []
+    },
+    "blend": "Rare",
+    "blendGrape": null,
+    "botrytis": false,
+    "sparkling": false,
+    "notes": "Low acidity; fragrant and full-bodied",
+    "locations": [
+      {
+        "country": "France",
+        "regions": [
+          "North Rhône"
+        ],
+        "subregions": [
+          "Condrieu"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "albariño",
+    "name": "Albariño",
+    "nameCN": "阿尔巴利诺",
+    "color": "White",
+    "climate": {
+      "label": "Moderate",
+      "min": "M",
+      "max": "M"
+    },
+    "acidity": "High",
+    "tannin": null,
+    "sweetness": "Dry",
+    "body": "M",
+    "oak": "No",
+    "canAge": false,
+    "ageNotes": null,
+    "flavors": {
+      "unripe": [
+        "Stone Fruit",
+        "Citrus"
+      ],
+      "ripe": [],
+      "extraRipe": []
+    },
+    "blend": "Rare",
+    "blendGrape": null,
+    "botrytis": false,
+    "sparkling": false,
+    "notes": "High acidity; often made in a fresh unoaked style",
+    "locations": [
+      {
+        "country": "Spain",
+        "regions": [
+          "Galicia"
+        ],
+        "subregions": [
+          "Rías Baixas"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "zinfandel-primitivo",
+    "name": "Zinfandel/Primitivo",
+    "nameCN": "仙粉黛",
+    "color": "Red; Rosé",
+    "climate": {
+      "label": "Warm",
+      "min": "H",
+      "max": "H"
+    },
+    "acidity": "Medium–High",
+    "tannin": "Medium–High",
+    "sweetness": null,
+    "body": null,
+    "oak": "Yes",
+    "canAge": true,
+    "ageNotes": "Earth; Meat;",
+    "flavors": {
+      "unripe": [
+        "Red Fruit",
+        "Black Fruit"
+      ],
+      "ripe": [],
+      "extraRipe": [
+        "Dried Fruit"
+      ]
+    },
+    "blend": "Rare",
+    "blendGrape": null,
+    "botrytis": false,
+    "sparkling": false,
+    "notes": "Ripens unevenly; Rose",
+    "locations": [
+      {
+        "country": "USA",
+        "regions": [
+          "California"
+        ]
+      },
+      {
+        "country": "Italy",
+        "regions": [
+          "Puglia"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "grenache---garnacha",
+    "name": "Grenache / Garnacha",
+    "nameCN": "歌海娜 ",
+    "color": "Red; Rosé",
+    "climate": {
+      "label": "Warm",
+      "min": "H",
+      "max": "H"
+    },
+    "acidity": "Low",
+    "tannin": "Low–Medium",
+    "sweetness": null,
+    "body": null,
+    "oak": "Both",
+    "canAge": true,
+    "ageNotes": "Earth; Meat; Dried Fruit",
+    "flavors": {
+      "unripe": [
+        "Red Fruit",
+        "Spice(White pepper)"
+      ],
+      "ripe": [],
+      "extraRipe": []
+    },
+    "blend": "Yes",
+    "blendGrape": "Syrah; Tempranillo",
+    "botrytis": false,
+    "sparkling": false,
+    "notes": "Very high sugar; often used in blends; can make rosé; thin skin",
+    "locations": [
+      {
+        "country": "Spain",
+        "regions": [
+          "Navarra",
+          "Rioja",
+          "Priorat"
+        ]
+      },
+      {
+        "country": "France",
+        "regions": [
+          "Southern Rhône"
+        ],
+        "subregions": [
+          "Châteauneuf-du-Pape"
+        ]
+      },
+      {
+        "country": "Australia",
+        "regions": [
+          "Barossa Valley",
+          "Mclaren Valley"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pinot-noir",
+    "name": "Pinot Noir",
+    "nameCN": "黑皮诺",
+    "color": "Red",
+    "climate": {
+      "label": "Cool–Moderate",
+      "min": "L",
+      "max": "M"
+    },
+    "acidity": "High",
+    "tannin": "Low–Medium",
+    "sweetness": null,
+    "body": null,
+    "oak": "Both",
+    "canAge": true,
+    "ageNotes": "Mushroom; Forest floor;",
+    "flavors": {
+      "unripe": [
+        "Red Fruit(Strawberry, Rasberry, red cherry)"
+      ],
+      "ripe": [],
+      "extraRipe": []
+    },
+    "blend": "Rare",
+    "blendGrape": null,
+    "botrytis": false,
+    "sparkling": false,
+    "notes": "Thin skin; early ripening; also used in sparkling wine; Pale to medium color",
+    "locations": [
+      {
+        "country": "France",
+        "regions": [
+          "Burgundy"
+        ],
+        "subregions": [
+          "Côte de Nuits(Gevrey-Chambertin AOC",
+          "Nuits-Saint-Georges AOC)",
+          "Côte de Beaune(Baune AOC",
+          "Pommard AOC)"
+        ]
+      },
+      {
+        "country": "USA",
+        "regions": [
+          "A: Oregon",
+          "B: California"
+        ],
+        "subregions": [
+          "A: Willamette Valley",
+          "B:  Santa Barbara",
+          "Sonoma (Los Carneros)"
+        ]
+      },
+      {
+        "country": "Chile",
+        "regions": [
+          "Casablanca Valley"
+        ]
+      },
+      {
+        "country": "South Africa",
+        "regions": [
+          "Walkerbay"
+        ]
+      },
+      {
+        "country": "Australia",
+        "regions": [
+          "Yarra Valley",
+          "Mornington Peninsula"
+        ]
+      },
+      {
+        "country": "New Zealand",
+        "regions": [
+          "Martinborough",
+          "Marlborough",
+          "Central Otago"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "merlot",
+    "name": "Merlot",
+    "nameCN": "梅洛",
+    "color": "Red",
+    "climate": {
+      "label": "Moderate–Warm",
+      "min": "M",
+      "max": "H"
+    },
+    "acidity": "Medium",
+    "tannin": "Medium–High",
+    "sweetness": "Dry",
+    "body": "Light-Full",
+    "oak": "Both",
+    "canAge": true,
+    "ageNotes": "Dried fruit; Tobacco",
+    "flavors": {
+      "unripe": [
+        "Red Fruit",
+        "Herbaceous notes"
+      ],
+      "ripe": [
+        "Cooked-black-fruit"
+      ],
+      "extraRipe": [
+        "Dried Fruit",
+        "Tabacco"
+      ]
+    },
+    "blend": "Yes",
+    "blendGrape": "Cabernet Sauvignon",
+    "botrytis": false,
+    "sparkling": false,
+    "notes": "Softer tannins than Cabernet Sauvignon",
+    "locations": [
+      {
+        "country": "France",
+        "regions": [
+          "Bordeaux (Right Bank)"
+        ],
+        "subregions": [
+          "Saint-Émilion",
+          "Pomerol",
+          "Languedoc-Roussillon"
+        ]
+      },
+      {
+        "country": "USA",
+        "regions": [
+          "California"
+        ],
+        "subregions": [
+          "Napa Valley",
+          "Sonoma"
+        ]
+      },
+      {
+        "country": "Chilie",
+        "regions": [
+          "Central Valley"
+        ]
+      },
+      {
+        "country": "South Africa",
+        "regions": [
+          "Stellenbosch"
+        ]
+      },
+      {
+        "country": "Australia",
+        "regions": [
+          "Margaret River"
+        ]
+      },
+      {
+        "country": "New Zealand",
+        "regions": [
+          "Hawke's Bay"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cabernet-sauvignon",
+    "name": "Cabernet Sauvignon",
+    "nameCN": "赤霞珠",
+    "color": "Red",
+    "climate": {
+      "label": "Moderate–Warm",
+      "min": "M",
+      "max": "H"
+    },
+    "acidity": "High",
+    "tannin": "High",
+    "sweetness": null,
+    "body": null,
+    "oak": "Yes",
+    "canAge": true,
+    "ageNotes": "drired Fruit; Earth; Forest Floor",
+    "flavors": {
+      "unripe": [
+        "Green bell pepper",
+        "Herbal",
+        "Herbaceous notes"
+      ],
+      "ripe": [],
+      "extraRipe": [
+        "Black Fruits"
+      ]
+    },
+    "blend": "Yes",
+    "blendGrape": "Cape Blend; Pinotage",
+    "botrytis": false,
+    "sparkling": false,
+    "notes": "Thick skin; late ripening;",
+    "locations": [
+      {
+        "country": "France",
+        "regions": [
+          "Bordeaux(Left Bank)"
+        ],
+        "subregions": [
+          "Haut-Medoc(Margaux",
+          "Pauillac)",
+          "Graves(Pessac-leognan)",
+          "Languedoc-Roussillon"
+        ]
+      },
+      {
+        "country": "USA",
+        "regions": [
+          "California"
+        ],
+        "subregions": [
+          "Napa Valley(Rutherford",
+          "Oakville Calistoga)",
+          "Sonoma"
+        ]
+      },
+      {
+        "country": "Chilie",
+        "regions": [
+          "Central Valley (Maipo Valley",
+          "Colchagua Valley)"
+        ]
+      },
+      {
+        "country": "South Africa",
+        "regions": [
+          "Stellenbosch"
+        ]
+      },
+      {
+        "country": "Australia",
+        "regions": [
+          "Margaret River",
+          "Coonawarra"
+        ]
+      },
+      {
+        "country": "New Zealand",
+        "regions": [
+          "Hawke's Bay"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "syrah---shiraz",
+    "name": "Syrah / Shiraz",
+    "nameCN": "西拉",
+    "color": "Red",
+    "climate": {
+      "label": "Moderate–Warm",
+      "min": "M",
+      "max": "H"
+    },
+    "acidity": "Medium–High",
+    "tannin": "Medium–High",
+    "sweetness": null,
+    "body": null,
+    "oak": "Yes",
+    "canAge": true,
+    "ageNotes": "drired Fruit; Leather; Meat; Earth",
+    "flavors": {
+      "unripe": [
+        "Black pepper",
+        "Blackberry"
+      ],
+      "ripe": [
+        "Blackberry",
+        "Plum"
+      ],
+      "extraRipe": [
+        "Jam",
+        "Chocolate",
+        "Sweet spice"
+      ]
+    },
+    "blend": "Yes",
+    "blendGrape": "Grenache; Rhone Blend",
+    "botrytis": false,
+    "sparkling": false,
+    "notes": "Can be savoury or rich depending on climate; ThiCh skin",
+    "locations": [
+      {
+        "country": "France",
+        "regions": [
+          "Bordeaux"
+        ],
+        "subregions": [
+          "Northern Rhône (Cote Rotie",
+          "Hermitage",
+          "Crozes-Hermitage)",
+          "Languedoc-Roussillon(Minervois)"
+        ]
+      },
+      {
+        "country": "Australia",
+        "regions": [
+          "South Australia"
+        ],
+        "subregions": [
+          "Barossa Valley",
+          "Hunter Valley"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "gamay",
+    "name": "Gamay",
+    "nameCN": "佳美",
+    "color": "Red",
+    "climate": {
+      "label": "Moderate",
+      "min": "M",
+      "max": "M"
+    },
+    "acidity": "High",
+    "tannin": "Low–Medium",
+    "sweetness": null,
+    "body": null,
+    "oak": "No",
+    "canAge": false,
+    "ageNotes": null,
+    "flavors": {
+      "unripe": [
+        "Red Fruit(Cranberry",
+        "Red cherry)"
+      ],
+      "ripe": [],
+      "extraRipe": [
+        "Strawberry",
+        "Banana"
+      ]
+    },
+    "blend": "Rare",
+    "blendGrape": null,
+    "botrytis": false,
+    "sparkling": false,
+    "notes": "often made with carbonic maceration 二氧化碳浸渍法 Banana & Candy Flavor",
+    "locations": [
+      {
+        "country": "France",
+        "regions": [
+          "Beaujolais"
+        ],
+        "subregions": [
+          "Fleurie"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tempranillo",
+    "name": "Tempranillo",
+    "nameCN": "丹魄",
+    "color": "Red",
+    "climate": {
+      "label": "Moderate–Warm",
+      "min": "M",
+      "max": "H"
+    },
+    "acidity": "Medium",
+    "tannin": "Medium",
+    "sweetness": null,
+    "body": "Medium-Full",
+    "oak": "Both",
+    "canAge": true,
+    "ageNotes": "Leather; Mushroom; Dried Fruit",
+    "flavors": {
+      "unripe": [
+        "Red Fruit",
+        "Black Fruit"
+      ],
+      "ripe": [],
+      "extraRipe": []
+    },
+    "blend": "Yes",
+    "blendGrape": "Garnacha",
+    "botrytis": false,
+    "sparkling": false,
+    "notes": "Oak ageing is very important in many classic styles; Mix style",
+    "locations": [
+      {
+        "country": "Spain",
+        "regions": [
+          "Rioja",
+          "Ribera del Duero",
+          "Catalunya"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "carménère",
+    "name": "Carménère",
+    "nameCN": "佳美娜",
+    "color": "Red",
+    "climate": {
+      "label": "Warm",
+      "min": "H",
+      "max": "H"
+    },
+    "acidity": "Medium–High",
+    "tannin": "High",
+    "sweetness": null,
+    "body": "Full",
+    "oak": "Both",
+    "canAge": true,
+    "ageNotes": "Leather; Earth",
+    "flavors": {
+      "unripe": [
+        "Green bell pepper"
+      ],
+      "ripe": [
+        "Black cherry",
+        "Plum"
+      ],
+      "extraRipe": []
+    },
+    "blend": "yes",
+    "blendGrape": "Cabernet Sauvignon; Merlot",
+    "botrytis": false,
+    "sparkling": false,
+    "notes": "Often shows herbaceous notes, Very strong Green pepper flavor",
+    "locations": [
+      {
+        "country": "Chile",
+        "regions": [
+          "Central Valley"
+        ],
+        "subregions": [
+          "Santiago"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "malbec",
+    "name": "Malbec",
+    "nameCN": "马尔贝克",
+    "color": "Red",
+    "climate": {
+      "label": "Warm",
+      "min": 4,
+      "max": "H"
+    },
+    "acidity": null,
+    "tannin": "High",
+    "sweetness": null,
+    "body": "Full",
+    "oak": "Yes",
+    "canAge": true,
+    "ageNotes": "Dried fruit; Meat",
+    "flavors": {
+      "unripe": [
+        "Black Fruit (Red plum, Blackberry)"
+      ],
+      "ripe": [],
+      "extraRipe": []
+    },
+    "blend": "Yes",
+    "blendGrape": "Cabernet Sauvignon; Merlot",
+    "botrytis": false,
+    "sparkling": false,
+    "notes": "Deep colour; plush fruit in warmer climates",
+    "locations": [
+      {
+        "country": "Argentina",
+        "regions": [
+          "Mendoza"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pinotage",
+    "name": "Pinotage",
+    "nameCN": "皮诺塔吉",
+    "color": "Red",
+    "climate": {
+      "label": "Warm",
+      "min": "H",
+      "max": "H"
+    },
+    "acidity": "High",
+    "tannin": "Medium",
+    "sweetness": null,
+    "body": "Medium-Full",
+    "oak": "Yes",
+    "canAge": true,
+    "ageNotes": "Coffee; Chocolate; Smoke",
+    "flavors": {
+      "unripe": [
+        "Red Fruit",
+        "Black Fruit"
+      ],
+      "ripe": [],
+      "extraRipe": []
+    },
+    "blend": "Yes",
+    "blendGrape": "Cabernet Sauvignon; Merlot",
+    "botrytis": false,
+    "sparkling": false,
+    "notes": "South African crossing of Pinot Noir and Cinsault; Cape Blend",
+    "locations": [
+      {
+        "country": "South Africa",
+        "regions": [
+          "Western Cape"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nebbiolo",
+    "name": "Nebbiolo",
+    "nameCN": "内比奥罗",
+    "color": "Red",
+    "climate": {
+      "label": "Moderate",
+      "min": "M",
+      "max": "M"
+    },
+    "acidity": "High",
+    "tannin": "High",
+    "sweetness": null,
+    "body": "Full",
+    "oak": "Both",
+    "canAge": true,
+    "ageNotes": "Tobacco; Leather; Mushroom",
+    "flavors": {
+      "unripe": [
+        "Red Fruit(Red Cherry, Red plum)",
+        "Herbal(Dried herb)",
+        "Floral(Rese, violet)"
+      ],
+      "ripe": [],
+      "extraRipe": []
+    },
+    "blend": "Rare",
+    "blendGrape": null,
+    "botrytis": false,
+    "sparkling": false,
+    "notes": "Pale colour but high tannin and high acidity; often age years",
+    "locations": [
+      {
+        "country": "Italy",
+        "regions": [
+          "Piedmont"
+        ],
+        "subregions": [
+          "Barolo",
+          "Barbaresco"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "barbera",
+    "name": "Barbera",
+    "nameCN": "巴贝拉",
+    "color": "Red",
+    "climate": {
+      "label": "Moderate",
+      "min": "M",
+      "max": "M"
+    },
+    "acidity": "High",
+    "tannin": "Low–Medium",
+    "sweetness": null,
+    "body": null,
+    "oak": "Both",
+    "canAge": false,
+    "ageNotes": null,
+    "flavors": {
+      "unripe": [
+        "Red Fruit(cherry)",
+        "Spice(Black Pepper)"
+      ],
+      "ripe": [],
+      "extraRipe": []
+    },
+    "blend": "Rare",
+    "blendGrape": null,
+    "botrytis": false,
+    "sparkling": false,
+    "notes": "High acidity; lower tannin than many Italian reds",
+    "locations": [
+      {
+        "country": "Italy",
+        "regions": [
+          "Piedmont"
+        ],
+        "subregions": [
+          "Barbera d'Asti"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "corvina",
+    "name": "Corvina",
+    "nameCN": "科维纳",
+    "color": "Red",
+    "climate": {
+      "label": "Moderate",
+      "min": "M",
+      "max": "M"
+    },
+    "acidity": "High",
+    "tannin": "Low–Medium",
+    "sweetness": null,
+    "body": null,
+    "oak": "No(Rare)",
+    "canAge": false,
+    "ageNotes": "Dried fruit; Chocolate; Spice",
+    "flavors": {
+      "unripe": [
+        "Red Fruit(Red Cherry, Red Plum)"
+      ],
+      "ripe": [],
+      "extraRipe": []
+    },
+    "blend": "Yes",
+    "blendGrape": "local variety",
+    "botrytis": false,
+    "sparkling": false,
+    "notes": "Important for Valpolicella and Amarone styles; often blend with low grapes. Wine-Fresh Grapes: Valpolicella DOC & Valpolicella DOC Classico. Wine-Dried Grapes: Amarone della valpolicella DOCG & Recioto della valpolicella DOCG; High Alcohol,",
+    "locations": [
+      {
+        "country": "Italy",
+        "regions": [
+          "Veneto"
+        ],
+        "subregions": [
+          "Valpolicella",
+          "Amarone della Valpolicella"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sangiovese",
+    "name": "Sangiovese",
+    "nameCN": "桑娇维塞",
+    "color": "Red",
+    "climate": {
+      "label": "Warm",
+      "min": "H",
+      "max": "H"
+    },
+    "acidity": "High",
+    "tannin": "High",
+    "sweetness": null,
+    "body": "Medium-Full",
+    "oak": "Yes",
+    "canAge": false,
+    "ageNotes": "Leather; Tobacco; Earth",
+    "flavors": {
+      "unripe": [
+        "Red Fruit(Cherry",
+        "Plum)",
+        "Herbal(Dried Herbs)"
+      ],
+      "ripe": [],
+      "extraRipe": []
+    },
+    "blend": "Yes",
+    "blendGrape": "local variety",
+    "botrytis": false,
+    "sparkling": false,
+    "notes": "Often Blend",
+    "locations": [
+      {
+        "country": "Italy",
+        "regions": [
+          "Tuscany"
+        ],
+        "subregions": [
+          "Chianti",
+          "Brunello di Montalcino"
+        ]
+      },
+      {
+        "country": "Italy"
+      }
+    ]
+  },
+  {
+    "id": "montepulciano",
+    "name": "Montepulciano",
+    "nameCN": "蒙特布查诺",
+    "color": "Red",
+    "climate": {
+      "label": "Warm",
+      "min": "H",
+      "max": "H"
+    },
+    "acidity": "Medium",
+    "tannin": "High",
+    "sweetness": null,
+    "body": null,
+    "oak": "Both",
+    "canAge": false,
+    "ageNotes": null,
+    "flavors": {
+      "unripe": [
+        "Black Fruit (Black cherry",
+        "Blackberry)"
+      ],
+      "ripe": [],
+      "extraRipe": []
+    },
+    "blend": "Rare",
+    "blendGrape": null,
+    "botrytis": false,
+    "sparkling": false,
+    "notes": "Deep colour; soft fruit-driven styles common",
+    "locations": [
+      {
+        "country": "Italy",
+        "regions": [
+          "Abruzzo"
+        ],
+        "subregions": [
+          "Montepulciano d'Abruzzo"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,744 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>All Grapes Study Guide</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+
+	table.collection-content {
+		width: 100%;
+		table-layout: fixed;
+	}
+
+	table.collection-content th,
+	table.collection-content td {
+		overflow-wrap: anywhere;
+	}
+
+	table.collection-content td > .user,
+	table.collection-content td > time {
+		white-space: pre-wrap;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content-wrapper {
+	overflow-x: auto;
+}
+
+@media only print {
+	.collection-content-wrapper {
+		overflow-x: visible;
+	}
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	gap: 46px;
+}
+
+.column {
+	min-width: 0;
+	overflow: hidden;
+}
+
+.column > *:first-child {
+	margin-top: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="ae242035-4316-83ea-a599-017fc3d086b4" class="page sans"><header><h1 class="page-title" dir="auto">All Grapes Study Guide</h1><p class="page-description" dir="auto"></p></header><div class="page-body"><div style="display:contents" dir="auto"><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0"><strong>SÉMILLON 赛美蓉</strong></summary><div class="indented"><div style="display:contents" dir="auto"><ul id="d9742035-4316-839a-a395-8139ce65635f" class="bulleted-list"><li style="list-style-type:disc">moderate to warm</li></ul></div><div style="display:contents" dir="auto"><ul id="75f42035-4316-83bb-95cc-014c3527d477" class="bulleted-list"><li style="list-style-type:disc"><strong>Youthful:</strong> apple, lemon</li></ul></div><div style="display:contents" dir="auto"><ul id="b2b42035-4316-8264-a5d0-011d212bd713" class="bulleted-list"><li style="list-style-type:disc"><strong>Fully developed:</strong> dried fruits, nuts, honey</li></ul></div><div style="display:contents" dir="auto"><ul id="47e42035-4316-83f3-a47f-0104944724f2" class="bulleted-list"><li style="list-style-type:disc">Medium-high acid</li></ul></div><div style="display:contents" dir="auto"><ul id="38c42035-4316-8276-af86-0107917f609c" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue">Botrytis</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="8f842035-4316-822b-af31-014b40385673" class="bulleted-list"><li style="list-style-type:disc">Dry to sweet</li></ul></div><div style="display:contents" dir="auto"><ul id="09942035-4316-8220-9b1f-8104ced655f6" class="bulleted-list"><li style="list-style-type:disc">Light to full body</li></ul></div><div style="display:contents" dir="auto"><ul id="ae542035-4316-8371-bd8f-81d790e1f392" class="bulleted-list"><li style="list-style-type:disc">Unoaked or oaked</li></ul></div><div style="display:contents" dir="auto"><ul id="8c142035-4316-83cc-bfe8-813cc69a676c" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue">Sometimes blended with Sauvignon Blanc </mark><div style="display:contents" dir="auto"><ul id="a5d42035-4316-831b-888b-015d537d1498" class="bulleted-list"><li style="list-style-type:circle"><mark class="highlight-blue">famous blend &amp; Oaked version (Finger nail: Bordeaux [left bank]- Graves - Pessac-leognan  )</mark></li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="f3e42035-4316-83cf-b6bd-01a6e4d8af5f" class="bulleted-list"><li style="list-style-type:disc">AGE WORTHY</li></ul></div><div style="display:contents" dir="auto"><hr id="92642035-4316-8296-8f40-013a4a31c5fb"/></div><div style="display:contents" dir="auto"><ul id="4d542035-4316-8351-9b2f-01597e254bb3" class="bulleted-list"><li style="list-style-type:disc"><strong>France:</strong> <mark class="highlight-blue">Bordeaux: Sauternes AOC</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="08142035-4316-831e-84a8-81d23fe75c09" class="bulleted-list"><li style="list-style-type:disc"><strong>Australia:</strong> <div style="display:contents" dir="auto"><ul id="52b42035-4316-83c6-972c-01f066a5782e" class="bulleted-list"><li style="list-style-type:circle">Western Australia： New South Wales； <mark class="highlight-blue">Hunter Valley</mark>; </li></ul></div><div style="display:contents" dir="auto"><ul id="77e42035-4316-8303-8986-0153dc349619" class="bulleted-list"><li style="list-style-type:circle">South Australia： <mark class="highlight-blue">Barossa （Shriaz &amp; Semillon）</mark>;  Victoria</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><p id="c4542035-4316-8344-8501-012819bd700a" class=""><mark class="highlight-blue">Barossa &amp; Hunter Valley: Pick early - super dry - super high acid</mark></p></div><div style="display:contents" dir="auto"><ul id="9e542035-4316-8347-8bf5-017415653d00" class="toggle"><li><details open=""><summary>Map</summary><div style="display:contents" dir="auto"><div id="99642035-4316-835b-a756-81950639ae81" class="column-list"><div style="display:contents" dir="auto"><div id="d3642035-4316-8397-99a9-01f08479b683" style="width:50.00000000000002%" class="column"><div style="display:contents" dir="ltr"><figure id="78f42035-4316-8304-9a9a-01c24f14fa3d" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-02-18_at_2.43.24_PM.png"><img style="width:336px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-02-18_at_2.43.24_PM.png"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="ec342035-4316-836b-82c4-819a6c929800" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-02-18_at_2.43.46_PM.png"><img style="width:384px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-02-18_at_2.43.46_PM.png"/></a></figure></div></div></div><div style="display:contents" dir="auto"><div id="c0142035-4316-82ae-9398-014c419e87c6" style="width:50.000000000000014%" class="column"><div style="display:contents" dir="ltr"><figure id="96042035-4316-82d6-8033-81be549578a2" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-02-18_at_2.44.29_PM.png"><img style="width:288px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-02-18_at_2.44.29_PM.png"/></a></figure></div></div></div></div></div></details></li></ul></div></div></details></div><div style="display:contents" dir="auto"><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0"><strong>CHENIN BLANC 白诗南</strong></summary><div class="indented"><div style="display:contents" dir="auto"><ul id="a0f42035-4316-8296-a5e8-81e5112d2f89" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue"><strong>cool/moderate/warm - All Climate </strong></mark><strong>（1/2 - Chardonnay）</strong></li></ul></div><div style="display:contents" dir="auto"><ul id="09042035-4316-82b6-9022-816ab8bc8099" class="bulleted-list"><li style="list-style-type:disc"><strong>Just ripe:</strong> pear, lemon-lime, peach, nectarine</li></ul></div><div style="display:contents" dir="auto"><ul id="b3042035-4316-832e-9e93-01eaad521dc9" class="bulleted-list"><li style="list-style-type:disc"><strong>Extra ripe:</strong> peach, apricot, pineapple, mango</li></ul></div><div style="display:contents" dir="auto"><ul id="37d42035-4316-82ff-b79e-8179774af43c" class="bulleted-list"><li style="list-style-type:disc">Versatile: climates and styles</li></ul></div><div style="display:contents" dir="auto"><ul id="d4742035-4316-8224-88f0-8139d2c82fa8" class="bulleted-list"><li style="list-style-type:disc">High acid</li></ul></div><div style="display:contents" dir="auto"><ul id="80642035-4316-8326-847d-01e4cd619234" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue">Botrytis</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="ea142035-4316-83c1-a236-817213596171" class="bulleted-list"><li style="list-style-type:disc">Dry to sweet: harvest options</li></ul></div><div style="display:contents" dir="auto"><ul id="73642035-4316-82c5-b7d1-01474a155f9c" class="bulleted-list"><li style="list-style-type:disc">Oaked or unoaked</li></ul></div><div style="display:contents" dir="auto"><ul id="e9742035-4316-83ab-9926-81bdb5b211c2" class="bulleted-list"><li style="list-style-type:disc">AGE WORTHY</li></ul></div><div style="display:contents" dir="auto"><hr id="b9442035-4316-824b-97a5-01f84b690be9"/></div><div style="display:contents" dir="auto"><ul id="72642035-4316-8270-a432-81f538d3151a" class="bulleted-list"><li style="list-style-type:disc"><strong>France:</strong> <mark class="highlight-blue">Loire Valley: Vouvray AOC</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="01d42035-4316-8214-8031-8198347c74fb" class="bulleted-list"><li style="list-style-type:disc"><strong>S. Africa:</strong> <mark class="highlight-blue">Western Cape</mark></li></ul></div></div></details></div><div style="display:contents" dir="auto"><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0"><strong>PINOT GRIS / PINOT GRIGIO 灰皮诺</strong></summary><div class="indented"><div style="display:contents" dir="auto"><ul id="a3242035-4316-82ad-bbef-0196b4390bc6" class="bulleted-list"><li style="list-style-type:disc">cool to moderate</li></ul></div><div style="display:contents" dir="auto"><ul id="93b42035-4316-8323-91fe-813b918225f4" class="bulleted-list"><li style="list-style-type:disc"><strong>Pinot Grigio (dry) - </strong><mark class="highlight-blue"><strong>Italy</strong></mark><strong>:</strong> green apple, lemon-lime<div style="display:contents" dir="auto"><ul id="b8442035-4316-835f-a2bb-0145965434b5" class="bulleted-list"><li style="list-style-type:circle">High acid, </li></ul></div><div style="display:contents" dir="auto"><ul id="4ec42035-4316-8399-be32-81ae55f78ae9" class="bulleted-list"><li style="list-style-type:circle"><mark class="highlight-blue">light body, </mark></li></ul></div><div style="display:contents" dir="auto"><ul id="f6d42035-4316-8346-a8cb-813f8b5bff57" class="bulleted-list"><li style="list-style-type:circle"><mark class="highlight-blue">simple</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="c8342035-4316-835e-8faf-01c42effbde6" class="bulleted-list"><li style="list-style-type:circle"><mark class="highlight-blue">Friuli - Pinot Grigio is complex</mark></li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="67c42035-4316-8289-901c-81b39f070385" class="bulleted-list"><li style="list-style-type:disc"><strong>Pinot Gris (dry/off-dry/medium-dry) - </strong><mark class="highlight-blue"><strong>France</strong></mark><strong>:</strong> peach, banana, mango<div style="display:contents" dir="auto"><ul id="6ba42035-4316-8271-bf33-01d4b78e0fc8" class="bulleted-list"><li style="list-style-type:circle">Medium acid, </li></ul></div><div style="display:contents" dir="auto"><ul id="0b142035-4316-8200-8873-01fb06fa0701" class="bulleted-list"><li style="list-style-type:circle"><mark class="highlight-blue">full body, </mark></li></ul></div><div style="display:contents" dir="auto"><ul id="ccf42035-4316-830e-8576-81de4e940623" class="bulleted-list"><li style="list-style-type:circle"><mark class="highlight-blue">complex</mark></li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="d7e42035-4316-8294-a842-8155054b4c39" class="bulleted-list"><li style="list-style-type:disc">Versatile: climates and styles</li></ul></div><div style="display:contents" dir="auto"><ul id="fe242035-4316-82cd-8d20-814adfb064b8" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue">Botrytis</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="b2542035-4316-828b-b2c7-816e9a116838" class="bulleted-list"><li style="list-style-type:disc">Dry to sweet: harvest options</li></ul></div><div style="display:contents" dir="auto"><ul id="e8f42035-4316-8202-a506-8156a8ab8984" class="bulleted-list"><li style="list-style-type:disc">Oaked or unoaked</li></ul></div><div style="display:contents" dir="auto"><ul id="f5a42035-4316-83b1-b2f4-814c0670e9cb" class="bulleted-list"><li style="list-style-type:disc">AGE WORTHY</li></ul></div><div style="display:contents" dir="auto"><hr id="06742035-4316-838a-8a79-01592eb771ea"/></div><div style="display:contents" dir="auto"><ul id="ede42035-4316-82b2-b237-814b46f49274" class="bulleted-list"><li style="list-style-type:disc"><strong>France:</strong> <mark class="highlight-blue">Alsace AOC</mark>, Alsace Grand Cru AOC, <mark class="highlight-blue">Vendanges Tardives </mark>(dry or sweet) - Late Harvest 晚收</li></ul></div><div style="display:contents" dir="auto"><ul id="a2f42035-4316-8369-8a32-01c149e9c0f8" class="bulleted-list"><li style="list-style-type:disc"><strong>Italy:</strong> <mark class="highlight-blue">Friuli</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="a1d42035-4316-83d6-8790-017436a44902" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-default"><strong>USA:</strong></mark><mark class="highlight-default"> Oregon</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="f1042035-4316-820b-bcb7-81e25e089066" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-default"><strong>S. Africa:</strong></mark><mark class="highlight-default"> Western Cape</mark></li></ul></div></div></details></div><div style="display:contents" dir="auto"><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0"><strong>RIESLING 雷司令</strong></summary><div class="indented"><div style="display:contents" dir="auto"><ul id="55442035-4316-833e-9741-8154221d86b6" class="bulleted-list"><li style="list-style-type:disc">cool to moderate</li></ul></div><div style="display:contents" dir="auto"><ul id="45b42035-4316-8239-bfc2-817f629371f5" class="bulleted-list"><li style="list-style-type:disc"><strong>Just ripe:</strong> pear, lemon-lime, floral, apricot, peach</li></ul></div><div style="display:contents" dir="auto"><ul id="fbd42035-4316-8203-aa6b-8129159162d8" class="bulleted-list"><li style="list-style-type:disc"><strong>Extra ripe:</strong> peach, apricot, pineapple, mango, dried fruits</li></ul></div><div style="display:contents" dir="auto"><ul id="d0642035-4316-8260-817b-01bc5d4adf49" class="bulleted-list"><li style="list-style-type:disc">High acid</li></ul></div><div style="display:contents" dir="auto"><ul id="a4842035-4316-8384-9541-0169240b0088" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue">Botrytis</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="19142035-4316-834d-b415-81ee820028c6" class="bulleted-list"><li style="list-style-type:disc">Aromatic variety - depending on ripeness</li></ul></div><div style="display:contents" dir="auto"><ul id="e0b42035-4316-83a3-a0f9-018f2b29492d" class="bulleted-list"><li style="list-style-type:disc">Dry to sweet: harvest options</li></ul></div><div style="display:contents" dir="auto"><ul id="54a42035-4316-83eb-91be-01dbdd170081" class="bulleted-list"><li style="list-style-type:disc">Light to full body</li></ul></div><div style="display:contents" dir="auto"><ul id="03242035-4316-82c0-be88-01f939c7f21a" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue">Unoaked</mark></li></ul></div><div style="display:contents" dir="auto"><hr id="83842035-4316-8398-862a-810f034ac8e5"/></div><div style="display:contents" dir="auto"><ul id="8eb42035-4316-8397-b3a7-8149020d9fb4" class="bulleted-list"><li style="list-style-type:disc"><strong>France:</strong> Alsace</li></ul></div><div style="display:contents" dir="auto"><ul id="3c342035-4316-82e0-a27a-0107444d0195" class="bulleted-list"><li style="list-style-type:disc"><strong>Germany:</strong> Mosel, Pfalz, Rheingau</li></ul></div><div style="display:contents" dir="auto"><ul id="19442035-4316-827b-9786-811b92fc8003" class="bulleted-list"><li style="list-style-type:disc"><strong>Australia:</strong> S. Australia: Clare Valley, Eden Valley</li></ul></div><div style="display:contents" dir="auto"><ul id="16842035-4316-82eb-96f4-0161ac96e0d6" class="toggle"><li><details open=""><summary>Map</summary><div style="display:contents" dir="auto"><div id="62742035-4316-837b-a15a-018aee6a9ab1" class="column-list"><div style="display:contents" dir="auto"><div id="a0642035-4316-830d-b677-818252dbef9f" style="width:50%" class="column"><div style="display:contents" dir="ltr"><figure id="5f242035-4316-83a4-993a-01a8d392b69d" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-02-18_at_2.39.15_PM.png"><img style="width:288px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-02-18_at_2.39.15_PM.png"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="fc442035-4316-82a0-a311-017ae14032fa" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-02-18_at_2.40.36_PM.png"><img style="width:427.9921875px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-02-18_at_2.40.36_PM.png"/></a></figure></div><div style="display:contents" dir="auto"><p id="a7542035-4316-83de-b7a5-018997c323d6" class="">
+</p></div></div></div><div style="display:contents" dir="auto"><div id="4ef42035-4316-8380-b584-81f7a9d3bb2f" style="width:50%" class="column"><div style="display:contents" dir="ltr"><figure id="bec42035-4316-820c-ac27-81de9a8de674" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-02-18_at_2.39.43_PM.png"><img style="width:336px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-02-18_at_2.39.43_PM.png"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="b7142035-4316-8362-805a-011e7b4a15c6" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-02-18_at_2.40.50_PM.png"><img style="width:427.9921875px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-02-18_at_2.40.50_PM.png"/></a></figure></div></div></div></div></div></details></li></ul></div></div></details></div><div style="display:contents" dir="auto"><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0"><strong>ZINFANDEL / PRIMITIVO 仙粉黛</strong></summary><div class="indented"><div style="display:contents" dir="auto"><ul id="0de42035-4316-8371-b79e-81a1e9f473b5" class="bulleted-list"><li style="list-style-type:disc">Medium-high acid, </li></ul></div><div style="display:contents" dir="auto"><ul id="76342035-4316-83a4-b0ab-01f4cc9f151e" class="bulleted-list"><li style="list-style-type:disc">medium-high tannins</li></ul></div><div style="display:contents" dir="auto"><ul id="5a342035-4316-822c-a635-01515f46ab35" class="bulleted-list"><li style="list-style-type:disc">Raspberry, Cherry, Plum, Black Pepper</li></ul></div><div style="display:contents" dir="auto"><ul id="81442035-4316-8233-b4c2-01d1cdb1b9c8" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue">Ripens unevenly</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="94442035-4316-829d-ba6c-015b7e82e713" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue">High sugars</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="61742035-4316-8252-9e9d-01a590cb6274" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue">Rosé</mark> and oaked reds</li></ul></div><div style="display:contents" dir="auto"><ul id="27642035-4316-8307-88da-81effa3fc807" class="bulleted-list"><li style="list-style-type:disc">AGE WORTHY: earth, meat</li></ul></div><div style="display:contents" dir="auto"><hr id="3e642035-4316-8272-8fee-0145dab59873"/></div><div style="display:contents" dir="auto"><ul id="aff42035-4316-8210-b568-81c074eb14e9" class="bulleted-list"><li style="list-style-type:disc"><strong>California</strong> (Zinfandel)</li></ul></div><div style="display:contents" dir="auto"><ul id="b6042035-4316-8202-8d02-8141dc849c9e" class="bulleted-list"><li style="list-style-type:disc"><strong>Italy:</strong> Puglia (SE-Heel - Primitivo)</li></ul></div><div style="display:contents" dir="auto"><ul id="31542035-4316-83a4-943d-819047dac842" class="bulleted-list"><li style="list-style-type:disc">WHITE ZINFANDEL: Rosé production - simple flavors, fruity and youthful</li></ul></div></div></details></div><div style="display:contents" dir="auto"><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0"><strong>PINOT NOIR 黑皮诺</strong></summary><div class="indented"><div style="display:contents" dir="auto"><ul id="59042035-4316-824c-9da6-818d130d80ab" class="bulleted-list"><li style="list-style-type:disc">cool &amp; moderate</li></ul></div><div style="display:contents" dir="auto"><ul id="68542035-4316-833d-bb5d-01f9499de986" class="bulleted-list"><li style="list-style-type:disc">High Acid </li></ul></div><div style="display:contents" dir="auto"><ul id="3a642035-4316-82f8-9799-8109b04a6ce3" class="bulleted-list"><li style="list-style-type:disc">low-moderate tannins</li></ul></div><div style="display:contents" dir="auto"><ul id="d9e42035-4316-8224-8b91-81b932abe597" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue">thin skin</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="69442035-4316-825d-a47d-81ab3ea85256" class="bulleted-list"><li style="list-style-type:disc">Strawberry, Raspberry, Red Cherry</li></ul></div><div style="display:contents" dir="auto"><hr id="ba442035-4316-8376-b85f-017563bb9e9d"/></div><div style="display:contents" dir="auto"><ul id="35442035-4316-835e-9cea-0145b670930e" class="toggle"><li><details open=""><summary>All Locations -  6 国家:</summary><div style="display:contents" dir="ltr"><figure id="f8842035-4316-82d0-922f-81a190ca0ed6" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-03-11_at_3.58.03_PM.png"><img style="width:709.984375px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-03-11_at_3.58.03_PM.png"/></a></figure></div></details></li></ul></div><div style="display:contents" dir="auto"><ul id="02642035-4316-8364-8aaa-010cc118dcce" class="bulleted-list"><li style="list-style-type:disc">France: Burgundy and Champagne<div style="display:contents" dir="auto"><ul id="b7e42035-4316-823c-bfba-01d92b9c7bfe" class="bulleted-list"><li style="list-style-type:circle">Burgundy: Côte d’Or<div style="display:contents" dir="auto"><ul id="85042035-4316-8364-81f6-81ab22c6fb93" class="bulleted-list"><li style="list-style-type:square">Côte de Nuits: <div style="display:contents" dir="auto"><ul id="32d42035-4316-832f-89e9-01abe94a277f" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue">Gevrey-Chambertin AOC</mark> (Village), </li></ul></div><div style="display:contents" dir="auto"><ul id="78542035-4316-832b-b481-01cc2bd8bfd9" class="bulleted-list"><li style="list-style-type:disc">Nuits St. George</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="a7f42035-4316-838b-90d3-016ed24dc8fa" class="bulleted-list"><li style="list-style-type:square">Côte de Beaune: <div style="display:contents" dir="auto"><ul id="79c42035-4316-83c5-96bb-81754ae07e5f" class="bulleted-list"><li style="list-style-type:disc">Beaune AOC, </li></ul></div><div style="display:contents" dir="auto"><ul id="b7c42035-4316-8375-870b-01ddc2e72d2a" class="bulleted-list"><li style="list-style-type:disc">Pommard AOC</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="8cf42035-4316-838c-999a-816d09aabb29" class="toggle"><li><details open=""><summary>Map</summary><div style="display:contents" dir="auto"><div id="75e42035-4316-83c0-9077-811f93c39def" class="column-list"><div style="display:contents" dir="auto"><div id="b0742035-4316-83f9-8454-8151ddc22560" style="width:50%" class="column"><div style="display:contents" dir="ltr"><figure id="b1a42035-4316-82b3-8201-010922fd0941" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-02-18_at_2.27.18_PM.png"><img style="width:336px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-02-18_at_2.27.18_PM.png"/></a></figure></div></div></div><div style="display:contents" dir="auto"><div id="18d42035-4316-8270-8cea-01fbe0904e92" style="width:50%" class="column"><div style="display:contents" dir="ltr"><figure id="23c42035-4316-8339-b52c-01a4ae4888de" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-02-18_at_2.27.54_PM.png"><img style="width:336px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-02-18_at_2.27.54_PM.png"/></a></figure></div></div></div></div></div></details></li></ul></div></li></ul></div><div style="display:contents" dir="auto"><p id="61942035-4316-822c-a967-8173acae8bea" class="">4 Level:</p></div><div style="display:contents" dir="auto"><ul id="dd942035-4316-8348-8bdd-816f0db41e1e" class="bulleted-list"><li style="list-style-type:circle">Grand Cru (Chambertin)  共33个</li></ul></div><div style="display:contents" dir="auto"><ul id="62642035-4316-83cc-ae02-81aac3f72aa6" class="bulleted-list"><li style="list-style-type:circle">Premier Cru</li></ul></div><div style="display:contents" dir="auto"><ul id="79f42035-4316-82cf-bd3f-8177fdb2c27a" class="bulleted-list"><li style="list-style-type:circle">Village (Gevrey-Chambertin)</li></ul></div><div style="display:contents" dir="auto"><ul id="91142035-4316-826b-95e1-01f5755998bb" class="bulleted-list"><li style="list-style-type:circle">Regional</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="36c42035-4316-834c-a54a-01c87e8d1caa" class="bulleted-list"><li style="list-style-type:disc">USA: <div style="display:contents" dir="auto"><ul id="17242035-4316-8203-a550-0141f1b50ea6" class="bulleted-list"><li style="list-style-type:circle">California: Sonoma, Los Carneros, Santa Barbara; </li></ul></div><div style="display:contents" dir="auto"><ul id="58842035-4316-82d6-8775-01eb29d4c0b0" class="bulleted-list"><li style="list-style-type:circle">Oregon: Willamette Valley</li></ul></div><div style="display:contents" dir="auto"><ul id="ad142035-4316-82a6-910e-814678b6ee6c" class="toggle"><li><details open=""><summary>map</summary></details></li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="7b342035-4316-8394-8e98-815bacc00a64" class="bulleted-list"><li style="list-style-type:disc">Chile: Casablanca Valley<div style="display:contents" dir="auto"><ul id="7fc42035-4316-83ba-ac56-813498335f2f" class="toggle"><li><details open=""><summary>map</summary><div style="display:contents" dir="ltr"><figure id="0bb42035-4316-83be-8412-0135bf2b9ab1" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-02-18_at_2.30.46_PM.png"><img style="width:432px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-02-18_at_2.30.46_PM.png"/></a></figure></div></details></li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="94b42035-4316-8257-8cd5-81a324aec43c" class="bulleted-list"><li style="list-style-type:disc">Australia: <div style="display:contents" dir="auto"><ul id="ed642035-4316-820f-8b63-0148a4995a0c" class="bulleted-list"><li style="list-style-type:circle">Victoria: Yarra Valley, Mornington Peninsula, New South Wales</li></ul></div><div style="display:contents" dir="auto"><ul id="64742035-4316-824a-8cc0-013b47995aa5" class="toggle"><li><details open=""><summary>map</summary><div style="display:contents" dir="ltr"><figure id="3ed42035-4316-8353-974d-016501883f07" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-02-18_at_2.31.04_PM.png"><img style="width:528px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-02-18_at_2.31.04_PM.png"/></a></figure></div></details></li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="ec142035-4316-8228-a4f9-815bfd833d1c" class="bulleted-list"><li style="list-style-type:disc">S. Africa: Walker Bay<div style="display:contents" dir="auto"><ul id="ef242035-4316-82e3-b872-01153f05254f" class="toggle"><li><details open=""><summary>map</summary><div style="display:contents" dir="ltr"><figure id="40242035-4316-83d2-946d-01146ff4d19c" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-03-09_at_2.47.34_PM.png"><img style="width:709.984375px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-03-09_at_2.47.34_PM.png"/></a></figure></div></details></li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="b0742035-4316-8221-98e8-8182a858f6d6" class="bulleted-list"><li style="list-style-type:disc">New Zealand:<div style="display:contents" dir="auto"><ul id="a8242035-4316-83a9-8afa-01106102afc6" class="bulleted-list"><li style="list-style-type:circle">North. Island: Martinborough, </li></ul></div><div style="display:contents" dir="auto"><ul id="a8542035-4316-8250-9ae7-811ec0d540e5" class="bulleted-list"><li style="list-style-type:circle">South. Island: Marlborough, Central Otago</li></ul></div><div style="display:contents" dir="auto"><ul id="93542035-4316-826c-be41-013fb9aa8f36" class="toggle"><li><details open=""><summary>map</summary><div style="display:contents" dir="ltr"><figure id="16742035-4316-83fb-8611-01daf386f156" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-02-18_at_2.31.04_PM.png"><img style="width:528px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-02-18_at_2.31.04_PM.png"/></a></figure></div></details></li></ul></div></li></ul></div><div style="display:contents" dir="auto"><p id="c1942035-4316-83c9-9aa2-010ec90e4a6e" class="">
+</p></div></div></details></div><div style="display:contents" dir="auto"><hr id="49342035-4316-82ec-ab7e-013c2d0fabca"/></div><div style="display:contents" dir="auto"><h2 id="56342035-4316-83dc-a731-016f737ea3a8" class="">Syrah + Grenache</h2></div><div style="display:contents" dir="auto"><ul id="98c42035-4316-832f-95de-01c7a70fbb7f" class="bulleted-list"><li style="list-style-type:disc">North Rhone &amp; South Rhone</li></ul></div><div style="display:contents" dir="auto"><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0"><strong>SYRAH / SHIRAZ 西拉</strong></summary><div class="indented"><div style="display:contents" dir="auto"><ul id="2c242035-4316-82f1-80ba-81df42bdc6c5" class="bulleted-list"><li style="list-style-type:disc">moderate to warm</li></ul></div><div style="display:contents" dir="auto"><ul id="c6b42035-4316-8206-9a8a-81be0f04062d" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue">Thick skin</mark>, </li></ul></div><div style="display:contents" dir="auto"><ul id="60f42035-4316-8326-90b7-81dcc2079750" class="bulleted-list"><li style="list-style-type:disc">medium-high acid</li></ul></div><div style="display:contents" dir="auto"><ul id="a3742035-4316-826d-9ae3-019613cc6fd2" class="bulleted-list"><li style="list-style-type:disc">Medium-high tannin</li></ul></div><div style="display:contents" dir="auto"><ul id="de342035-4316-835c-bbc9-81143c25994e" class="bulleted-list"><li style="list-style-type:disc">Fruit characteristics vary depending on ripeness<div style="display:contents" dir="auto"><ul id="74d42035-4316-8379-ac44-817d30c8322d" class="bulleted-list"><li style="list-style-type:circle"><strong>Least ripe:</strong> <mark class="highlight-blue">black pepper, White pepper, black fruits</mark>,  blackberry</li></ul></div><div style="display:contents" dir="auto"><ul id="a2142035-4316-83fb-8e73-01a4c655e66d" class="bulleted-list"><li style="list-style-type:circle"><strong>Most ripe:</strong> blackberry, black cherry, licorice</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="bfb42035-4316-8235-8c47-01a850b53c7c" class="bulleted-list"><li style="list-style-type:disc">Medium-full body, </li></ul></div><div style="display:contents" dir="auto"><ul id="45f42035-4316-8298-a463-01d985d71216" class="bulleted-list"><li style="list-style-type:disc">oaked is common</li></ul></div><div style="display:contents" dir="auto"><ul id="2eb42035-4316-8312-acbe-81d6fea8d4b7" class="bulleted-list"><li style="list-style-type:disc">Single variety or blended</li></ul></div><div style="display:contents" dir="auto"><ul id="cb242035-4316-83d0-987a-8193e5990b24" class="bulleted-list"><li style="list-style-type:disc">AGE WORTHY: dried fruit, leather, meat, earth</li></ul></div><div style="display:contents" dir="auto"><ul id="5ca42035-4316-82d0-9a36-810838284ad2" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue">Often blended with Grenache &amp; Viognier</mark></li></ul></div><div style="display:contents" dir="auto"><hr id="c4742035-4316-82bc-a17d-017b359c490a"/></div><div style="display:contents" dir="auto"><ul id="88842035-4316-8355-afb3-8141e944d215" class="bulleted-list"><li style="list-style-type:disc"><strong>France:</strong> <div style="display:contents" dir="auto"><ul id="99142035-4316-82ad-b826-81b437b35650" class="bulleted-list"><li style="list-style-type:circle">North Rhône: <div style="display:contents" dir="auto"><ul id="54e42035-4316-8370-ac21-01e3e35a07ef" class="bulleted-list"><li style="list-style-type:square"><mark class="highlight-blue">Côte Rôtie AOC</mark> (Blend w Viognier), </li></ul></div><div style="display:contents" dir="auto"><ul id="98442035-4316-83c9-a3d3-0192859c41a0" class="bulleted-list"><li style="list-style-type:square"><mark class="highlight-blue">Crozes-Hermitage AOC</mark> (E. Central)<div style="display:contents" dir="auto"><ul id="5b642035-4316-8210-9f55-81e9fdfdd8de" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue">Hermitage AOC</mark>, </li></ul></div></li></ul></div></li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="73d42035-4316-834d-b36c-815e8014faa5" class="bulleted-list"><li style="list-style-type:disc"><strong>Australia:</strong> <div style="display:contents" dir="auto"><ul id="4b142035-4316-83a0-a5aa-8172e6580640" class="bulleted-list"><li style="list-style-type:circle">SE, Victoria, South Australia: <mark class="highlight-blue">Barossa</mark>, </li></ul></div><div style="display:contents" dir="auto"><ul id="17a42035-4316-8243-a123-0185407155ab" class="bulleted-list"><li style="list-style-type:circle">New South Wales: <mark class="highlight-blue">Hunter Valley</mark></li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="0d242035-4316-8207-bf05-01f365dec8ec" class="toggle"><li><details open=""><summary>Map</summary><div style="display:contents" dir="auto"><div id="9d842035-4316-82d9-be0a-010d73a5927b" class="column-list"><div style="display:contents" dir="auto"><div id="38142035-4316-8393-8645-815d17b409f8" style="width:50%" class="column"><div style="display:contents" dir="ltr"><figure id="cff42035-4316-834a-8033-813d9f811223" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-03-30_at_11.18.25_PM.png"><img style="width:498px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-03-30_at_11.18.25_PM.png"/></a></figure></div></div></div><div style="display:contents" dir="auto"><div id="eea42035-4316-839e-b68d-81404d68510a" style="width:50.000000000000014%" class="column"><div style="display:contents" dir="ltr"><figure id="cf642035-4316-822a-afa8-814fd57e30aa" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-03-30_at_11.18.32_PM.png"><img style="width:240px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-03-30_at_11.18.32_PM.png"/></a></figure></div></div></div></div></div><div style="display:contents" dir="auto"><p id="79d42035-4316-83f5-b7a8-815d2abd1bbc" class="">
+</p></div></details></li></ul></div></div></details></div><div style="display:contents" dir="auto"><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0"><strong>GRENACHE / GARNACHA 歌海娜</strong></summary><div class="indented"><div style="display:contents" dir="auto"><ul id="ab142035-4316-8253-91e1-010916e8b46b" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue">Thin skin</mark>, </li></ul></div><div style="display:contents" dir="auto"><ul id="7b542035-4316-825f-a0ec-0126e6e44052" class="bulleted-list"><li style="list-style-type:disc">low acid</li></ul></div><div style="display:contents" dir="auto"><ul id="eb042035-4316-8378-9981-012491a2301b" class="bulleted-list"><li style="list-style-type:disc">Low-medium tannin</li></ul></div><div style="display:contents" dir="auto"><ul id="b2c42035-4316-83cb-87dc-81bc33671970" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue">High sugar levels</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="83142035-4316-839f-9239-81a1e7920d06" class="bulleted-list"><li style="list-style-type:disc"><strong>Fruits:</strong> Red fruit strawberry, red cherry, red plum</li></ul></div><div style="display:contents" dir="auto"><ul id="fd442035-4316-8276-8186-01ddddb93ffb" class="bulleted-list"><li style="list-style-type:disc"><strong>Spice:</strong><mark class="highlight-blue"> white pepper</mark>, licorice</li></ul></div><div style="display:contents" dir="auto"><ul id="49e42035-4316-83e3-a1dd-0106986dcba2" class="bulleted-list"><li style="list-style-type:disc">Medium-full body; <mark class="highlight-blue">oaked is common</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="a9d42035-4316-83be-86de-817ff4522352" class="bulleted-list"><li style="list-style-type:disc">Single variety or blended</li></ul></div><div style="display:contents" dir="auto"><ul id="4b942035-4316-83ca-95e2-014159a1883a" class="bulleted-list"><li style="list-style-type:disc">AGE WORTHY: dried fruit, meat, caramel</li></ul></div><div style="display:contents" dir="auto"><ul id="d4442035-4316-82aa-9ce1-015a0f0761dd" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue">Often blended with Syrah | Tempranillo (In Spain)</mark></li></ul></div><div style="display:contents" dir="auto"><hr id="26642035-4316-83b6-86c0-01a1b9d07a1d"/></div><div style="display:contents" dir="auto"><ul id="45042035-4316-839d-9cb2-013e9266c24b" class="bulleted-list"><li style="list-style-type:disc"><strong>France:</strong> <div style="display:contents" dir="auto"><ul id="70042035-4316-8295-b1f3-01ce6da1e55e" class="bulleted-list"><li style="list-style-type:circle">South Rhône (warmer): <div style="display:contents" dir="auto"><ul id="7af42035-4316-8278-a349-01be06344717" class="bulleted-list"><li style="list-style-type:square"><mark class="highlight-blue">Côtes du Rhône AOC</mark>, <div style="display:contents" dir="auto"><ul id="64b42035-4316-839a-a3fb-01007dc7e978" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue">Côtes du Rhône Villages AOC</mark> (SE)</li></ul></div><div style="display:contents" dir="auto"><ul id="e5d42035-4316-82ab-b214-81d92a152d12" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue">Châteauneuf-du-Pape AOC</mark>, </li></ul></div></li></ul></div></li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="75542035-4316-83fd-8e13-81c8583928e0" class="bulleted-list"><li style="list-style-type:disc"><strong>Spain:</strong> <mark class="highlight-blue">Rioja DOCa</mark>, <mark class="highlight-blue">Navarra DO</mark>, <mark class="highlight-blue">Priorat DOCa(Syrah)</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="fe542035-4316-832c-a2ef-810f80beffc2" class="bulleted-list"><li style="list-style-type:disc"><strong>Australia:</strong> S. Australia: <mark class="highlight-blue">Barossa</mark>, <mark class="highlight-blue">McLaren Vale</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="1ec42035-4316-8300-9d57-01e4ad6f1bd3" class="toggle"><li><details open=""><summary>Map</summary><div style="display:contents" dir="auto"><div id="91542035-4316-82fb-aea8-81744e2df0e7" class="column-list"><div style="display:contents" dir="auto"><div id="a8542035-4316-8247-8803-012daa8e258b" style="width:50%" class="column"><div style="display:contents" dir="ltr"><figure id="41b42035-4316-82c1-b48b-019e7f1008b1" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-03-30_at_11.26.00_PM.png"><img style="width:282.9921875px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-03-30_at_11.26.00_PM.png"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="0ee42035-4316-838f-9899-81d652bb4222" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-03-30_at_11.27.09_PM.png"><img style="width:497.9921875px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-03-30_at_11.27.09_PM.png"/></a></figure></div></div></div><div style="display:contents" dir="auto"><div id="5ba42035-4316-824e-bdc9-811f60b61b27" style="width:50.000000000000014%" class="column"><div style="display:contents" dir="ltr"><figure id="e7d42035-4316-82b0-b1d3-01ee2db0bc09" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-03-30_at_11.26.11_PM.png"><img style="width:217.9921875px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-03-30_at_11.26.11_PM.png"/></a></figure></div></div></div></div></div></details></li></ul></div></div></details></div><div style="display:contents" dir="auto"><hr id="82342035-4316-83a9-b08a-019ee3692dea"/></div><div style="display:contents" dir="auto"><h2 id="c4442035-4316-82a4-816a-816482401b5d" class="">Merlot + Cabernet Sauvignon</h2></div><div style="display:contents" dir="auto"><ul id="d8642035-4316-825f-a71d-8191637e5160" class="toggle"><li><details open=""><summary>Map</summary><div style="display:contents" dir="ltr"><figure id="2af42035-4316-836a-ba05-810db19e2efc" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-03-31_at_11.33.23_AM.png"><img style="width:384px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-03-31_at_11.33.23_AM.png"/></a></figure></div><div style="display:contents" dir="auto"><div id="c0a42035-4316-82ed-89da-01851a44b3e3" class="column-list"><div style="display:contents" dir="auto"><div id="12e42035-4316-822b-b1c3-0145999a9072" style="width:50%" class="column"><div style="display:contents" dir="ltr"><figure id="e8b42035-4316-82bf-96a5-0146749f8bf0" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-03-31_at_11.33.49_AM.png"><img style="width:336px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-03-31_at_11.33.49_AM.png"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="51b42035-4316-83ea-af0d-81582cb01959" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-03-31_at_11.34.02_AM.png"><img style="width:301.9921875px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-03-31_at_11.34.02_AM.png"/></a></figure></div></div></div><div style="display:contents" dir="auto"><div id="cb842035-4316-82c3-8c5e-01620b984d28" style="width:50%" class="column"><div style="display:contents" dir="ltr"><figure id="5d542035-4316-833d-8f22-8173facbaffc" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-03-31_at_11.33.56_AM.png"><img style="width:301.9921875px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-03-31_at_11.33.56_AM.png"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="78542035-4316-82a9-bac4-01fb11ea800c" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-03-31_at_11.34.09_AM.png"><img style="width:301.9921875px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-03-31_at_11.34.09_AM.png"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="60642035-4316-8218-8820-810bbe60d81e" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-03-31_at_11.34.16_AM.png"><img style="width:301.9921875px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-03-31_at_11.34.16_AM.png"/></a></figure></div></div></div></div></div></details></li></ul></div><div style="display:contents" dir="auto"><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0"><strong>MERLOT 梅洛</strong></summary><div class="indented"><div style="display:contents" dir="auto"><ul id="d5342035-4316-83ca-97fb-01555a786659" class="bulleted-list"><li style="list-style-type:disc">moderate to warm - 可以不需要太热</li></ul></div><div style="display:contents" dir="auto"><ul id="2e242035-4316-835d-b8c6-0163a461358f" class="bulleted-list"><li style="list-style-type:disc">Medium acid</li></ul></div><div style="display:contents" dir="auto"><ul id="b0842035-4316-8277-ad17-81eb7f3dcd7a" class="bulleted-list"><li style="list-style-type:disc">Medium tannin<div style="display:contents" dir="auto"><ul id="8b242035-4316-83f0-b2a3-8110b3df3b31" class="bulleted-list"><li style="list-style-type:circle"><mark class="highlight-blue">all Medium</mark></li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="4aa42035-4316-8239-96dd-01a9727c82f6" class="bulleted-list"><li style="list-style-type:disc">Fruit characteristics vary depending on ripeness<div style="display:contents" dir="auto"><ul id="4f542035-4316-838b-b998-81f840d6c6cf" class="bulleted-list"><li style="list-style-type:circle"><strong>Least ripe:</strong> <mark class="highlight-blue">bell pepper</mark>, strawberry, cherry</li></ul></div><div style="display:contents" dir="auto"><ul id="0c442035-4316-82f7-9589-01c58a817db4" class="bulleted-list"><li style="list-style-type:circle"><strong>Most ripe:</strong> blueberry, blackberry, currant</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="94842035-4316-821b-907a-816cd27e71df" class="bulleted-list"><li style="list-style-type:disc">Light to full body</li></ul></div><div style="display:contents" dir="auto"><ul id="fd342035-4316-82ee-a026-01d9ee9ae2cd" class="bulleted-list"><li style="list-style-type:disc">Oaked or unoaked</li></ul></div><div style="display:contents" dir="auto"><ul id="85342035-4316-8348-a3a8-8130b47a25ee" class="bulleted-list"><li style="list-style-type:disc">Simple or complex</li></ul></div><div style="display:contents" dir="auto"><ul id="b4942035-4316-83f1-9d19-81c87113b1c1" class="bulleted-list"><li style="list-style-type:disc">Single variety or blended</li></ul></div><div style="display:contents" dir="auto"><ul id="31542035-4316-835c-94f1-01ff49d7d2ca" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue">Often blended with Cabernet Sauvignon</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="4fa42035-4316-8280-8893-81521e1c6a3d" class="bulleted-list"><li style="list-style-type:disc">AGE WORTHY</li></ul></div><div style="display:contents" dir="auto"><hr id="90e42035-4316-82f7-9191-0147b7e2e636"/></div><div style="display:contents" dir="auto"><p id="db642035-4316-825a-afa0-01ca95f861b6" class="">Common Grow Area with Cabernet Sauvignon:</p></div><div style="display:contents" dir="auto"><p id="8c742035-4316-82dc-9f3e-81660fd11763" class=""><strong>California: </strong>Sonoma, Napa: Calistoga, Oakville, Rutherford</p></div><div style="display:contents" dir="auto"><p id="0b742035-4316-829d-98c5-012e25c563ce" class=""><strong>Chile: </strong><mark class="highlight-blue">Central Valleys</mark> (Merlot &amp; Cab)		</p></div><div style="display:contents" dir="auto"><p id="03442035-4316-824e-859c-81319ac3261a" class=""><strong>New Zealand</strong>: <mark class="highlight-blue">Hawkes Bay (Merlot &amp; Chardonnay)</mark></p></div><div style="display:contents" dir="auto"><p id="65342035-4316-83b3-8cc8-014415f09653" class=""><strong>S. Africa: </strong>W. Cape: Stellanbosch (Merlot &amp; Cab)</p></div><div style="display:contents" dir="auto"><hr id="cfe42035-4316-8340-9e99-01951cd0d007"/></div><div style="display:contents" dir="auto"><ul id="8d542035-4316-8385-993d-813f48fb6b5c" class="bulleted-list"><li style="list-style-type:disc"><strong>France:</strong> <mark class="highlight-blue">Bordeaux</mark> - Right Bank 右岸: <div style="display:contents" dir="auto"><ul id="c4b42035-4316-8355-81ad-0152d2c52e42" class="bulleted-list"><li style="list-style-type:circle"><mark class="highlight-blue">Saint-Émilion AOC</mark>, </li></ul></div><div style="display:contents" dir="auto"><ul id="16c42035-4316-8245-bfdd-813d0a2c5bb4" class="bulleted-list"><li style="list-style-type:circle"><mark class="highlight-blue">Pomerol AOC</mark> (SW)</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="3a242035-4316-8208-b107-812a6123465d" class="toggle"><li><details open=""><summary>Map</summary><div style="display:contents" dir="auto"><div id="80642035-4316-8255-bd13-01d7d4651a1e" class="column-list"><div style="display:contents" dir="auto"><div id="0de42035-4316-83cd-a571-01a1b7bee8e4" style="width:50%" class="column"><div style="display:contents" dir="ltr"><figure id="65542035-4316-83da-a2bf-016a2acd5cd3" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-03-30_at_10.55.13_PM.png"><img style="width:627.9921875px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-03-30_at_10.55.13_PM.png"/></a></figure></div></div></div><div style="display:contents" dir="auto"><div id="97e42035-4316-82d3-82d0-0136e69efca0" style="width:50%" class="column"><div style="display:contents" dir="ltr"><figure id="e3b42035-4316-82db-8775-8188321440a7" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-03-31_at_11.34.34_AM.png"><img style="width:282.9921875px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-03-31_at_11.34.34_AM.png"/></a></figure></div></div></div></div></div><div style="display:contents" dir="auto"><p id="7bf42035-4316-83c7-8390-81dcb1e5fcd3" class="">
+</p></div></details></li></ul></div></div></details></div><div style="display:contents" dir="auto"><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0"><strong>CABERNET SAUVIGNON 赤霞珠</strong></summary><div class="indented"><div style="display:contents" dir="auto"><ul id="e3742035-4316-8302-b9fd-01dd8cebb9a2" class="bulleted-list"><li style="list-style-type:disc"><strong>moderate warm ; - 需要Heat</strong></li></ul></div><div style="display:contents" dir="auto"><ul id="81242035-4316-82bf-bf4d-0131531fd886" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue">Thick skin</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="7b042035-4316-8238-b7a2-01dfe1f370cd" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue">High acid</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="34042035-4316-8275-8305-81ff1fbc4463" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue">High tannin</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="c6742035-4316-8390-aa77-818f87a18530" class="bulleted-list"><li style="list-style-type:disc">Medium-full body</li></ul></div><div style="display:contents" dir="auto"><ul id="65042035-4316-83a5-842d-0176a0ca4d30" class="bulleted-list"><li style="list-style-type:disc">Fruit characteristics vary depending on ripeness<div style="display:contents" dir="auto"><ul id="16042035-4316-83e6-ab2c-8150d9d001b3" class="bulleted-list"><li style="list-style-type:circle"><strong>Least ripe:</strong> bell pepper, herbs, cassis</li></ul></div><div style="display:contents" dir="auto"><ul id="d4a42035-4316-8269-bdee-81f4ae59b0f2" class="bulleted-list"><li style="list-style-type:circle"><strong>Most ripe:</strong> currant, black cherry</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="98642035-4316-825e-8039-0193f18ff97d" class="bulleted-list"><li style="list-style-type:disc">Dry</li></ul></div><div style="display:contents" dir="auto"><ul id="4c942035-4316-8382-83d6-81b8b68b104e" class="bulleted-list"><li style="list-style-type:disc">Unoaked or oaked (oak maturation common)</li></ul></div><div style="display:contents" dir="auto"><ul id="4bc42035-4316-82a2-ad10-019c69269f40" class="bulleted-list"><li style="list-style-type:disc">Single varietal or blended</li></ul></div><div style="display:contents" dir="auto"><ul id="59b42035-4316-8299-908b-016cf0592e02" class="bulleted-list"><li style="list-style-type:disc">Simple or complex</li></ul></div><div style="display:contents" dir="auto"><ul id="3cd42035-4316-83e6-a51b-8178bc7e72e8" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue">Often blended with Merlot</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="b8942035-4316-8239-ba09-01a3a10b26b2" class="bulleted-list"><li style="list-style-type:disc">AGE WORTHY</li></ul></div><div style="display:contents" dir="auto"><hr id="bd742035-4316-82c1-be05-01429f4a970a"/></div><div style="display:contents" dir="auto"><p id="f5f42035-4316-831b-b5a8-01a2143f59af" class="">Common Grow Area with Merlot:</p></div><div style="display:contents" dir="auto"><p id="4e242035-4316-8305-b5f8-818fd4ae6c44" class=""><strong>California: </strong>Sonoma, Napa: Calistoga, Oakville, Rutherford</p></div><div style="display:contents" dir="auto"><p id="f3642035-4316-8285-97f8-81ede7cdb0ed" class=""><strong>Chile: </strong><mark class="highlight-blue">Maipo(Cab), Colchagua(Cab), Central Valleys </mark>(Merlot &amp; Cab)	</p></div><div style="display:contents" dir="auto"><p id="ef542035-4316-820a-abd1-0112ea0e7158" class=""><strong>S. Africa: </strong>W. Cape: Stellanbosch (Merlot &amp; Cab)		</p></div><div style="display:contents" dir="auto"><p id="a6d42035-4316-82bf-abbb-0198f5636b7e" class=""><strong>Australia</strong>: <mark class="highlight-blue">Margaret River (Cab),  Coonawarra (Cab)</mark></p></div><div style="display:contents" dir="auto"><hr id="0c642035-4316-8336-afd3-818206aadeca"/></div><div style="display:contents" dir="auto"><ul id="63d42035-4316-821b-9c7a-01a2bcb49413" class="bulleted-list"><li style="list-style-type:disc"><strong>France:</strong> <mark class="highlight-blue">Bordeaux</mark> -<mark class="highlight-blue"> Left Bank 左岸</mark>: <div style="display:contents" dir="auto"><ul id="1b342035-4316-82dc-b1b7-014d23670b0e" class="bulleted-list"><li style="list-style-type:circle">Haut-Médoc AOC, <div style="display:contents" dir="auto"><ul id="22f42035-4316-8373-a432-017d33d49e34" class="bulleted-list"><li style="list-style-type:square">Pauillac AOC, </li></ul></div><div style="display:contents" dir="auto"><ul id="60442035-4316-838c-88da-81ecfb5daa35" class="bulleted-list"><li style="list-style-type:square">Margaux AOC, Médoc AOC, </li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="ad142035-4316-8285-b26e-81ab036e35de" class="bulleted-list"><li style="list-style-type:circle">Graves AOC (SW)<div style="display:contents" dir="auto"><ul id="06a42035-4316-8325-b457-0182877c2ea6" class="bulleted-list"><li style="list-style-type:square">Pessac-Léognan AOC, </li></ul></div></li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="f0f42035-4316-8330-87b9-81289d38ab08" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue">Bordeaux Grand Cru Classé</mark>: Wineries (not vineyards) — Left Bank Médoc and Pessac-Léognan only</li></ul></div><div style="display:contents" dir="auto"><ul id="0d842035-4316-8259-bc30-017bdda63266" class="toggle"><li><details open=""><summary>Map</summary><div style="display:contents" dir="auto"><div id="89342035-4316-83eb-94a5-81d52acd5ea1" class="column-list"><div style="display:contents" dir="auto"><div id="e3542035-4316-83e4-a2fd-013e72583e6e" style="width:50%" class="column"><div style="display:contents" dir="ltr"><figure id="37842035-4316-8373-a65a-81c0415f1acb" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-03-30_at_10.55.13_PM.png"><img style="width:627.9921875px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-03-30_at_10.55.13_PM.png"/></a></figure></div></div></div><div style="display:contents" dir="auto"><div id="4f642035-4316-837e-b958-017ac201519d" style="width:50%" class="column"><div style="display:contents" dir="ltr"><figure id="a0d42035-4316-83f8-8790-819fddeba453" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-03-31_at_11.34.27_AM.png"><img style="width:282.9921875px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-03-31_at_11.34.27_AM.png"/></a></figure></div></div></div></div></div><div style="display:contents" dir="auto"><p id="a5c42035-4316-8229-aa0e-01946b341e43" class="">
+</p></div></details></li></ul></div></div></details></div><div style="display:contents" dir="auto"><hr id="a5642035-4316-8229-ba75-81a596ce220e"/></div><div style="display:contents" dir="auto"><h2 id="22f42035-4316-8377-9d0a-811eff0305ea" class="">Chardonnay + Sauvignon Blanc</h2></div><div style="display:contents" dir="auto"><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0"><strong>CHARDONNAY 霞多丽</strong></summary><div class="indented"><div style="display:contents" dir="auto"><ul id="35242035-4316-83e7-a1ef-817b83961974" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue"><strong>cool/moderate/warm - All Climate </strong></mark><strong>（1/2 - Chenin Blanc）</strong></li></ul></div><div style="display:contents" dir="auto"><ul id="eaf42035-4316-8263-a545-01e4362c4a2f" class="bulleted-list"><li style="list-style-type:disc"><strong>Cool:</strong> pear, lemon</li></ul></div><div style="display:contents" dir="auto"><ul id="83342035-4316-8239-9264-81dc5ef0cbed" class="bulleted-list"><li style="list-style-type:disc"><strong>Moderate:</strong> peach, quince, <mark class="highlight-blue">banana</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="45b42035-4316-82a6-80a7-015c7e12756e" class="bulleted-list"><li style="list-style-type:disc"><strong>Warm ripe:</strong> pineapple, banana</li></ul></div><div style="display:contents" dir="auto"><ul id="9e242035-4316-8343-8fc0-81db049b7782" class="bulleted-list"><li style="list-style-type:disc">Versatile: climates and styles</li></ul></div><div style="display:contents" dir="auto"><ul id="aad42035-4316-82db-882c-81ff49e095ef" class="bulleted-list"><li style="list-style-type:disc">Medium-high acid</li></ul></div><div style="display:contents" dir="auto"><ul id="d7242035-4316-837d-a95f-012c95705940" class="bulleted-list"><li style="list-style-type:disc">Winemaking option: <mark class="highlight-blue">adjustments, ML, lees, oak</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="7bb42035-4316-83bb-9529-019e1d38c24b" class="bulleted-list"><li style="list-style-type:disc">Oaked or unoaked</li></ul></div><div style="display:contents" dir="auto"><ul id="30042035-4316-8329-aae6-01967331c3c7" class="bulleted-list"><li style="list-style-type:disc">AGE WORTHY: oaked versions</li></ul></div><div style="display:contents" dir="auto"><hr id="16f42035-4316-82eb-80b7-018fb3570615"/></div><div style="display:contents" dir="auto"><ul id="28e42035-4316-830f-b5b8-8145960c6842" class="bulleted-list"><li style="list-style-type:disc"><strong>France:</strong> <div style="display:contents" dir="auto"><ul id="a0c42035-4316-825f-96b5-018c9fab076c" class="bulleted-list"><li style="list-style-type:circle">Burgundy: </li></ul></div><div style="display:contents" dir="auto"><ul id="ba742035-4316-83a5-ac25-01b6918cb276" class="bulleted-list"><li style="list-style-type:circle"><mark class="highlight-blue">Chablis AOC</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="dfd42035-4316-821e-849e-8150406244a0" class="bulleted-list"><li style="list-style-type:circle">Côte d’Or: <div style="display:contents" dir="auto"><ul id="5d642035-4316-8343-9167-010b841979b5" class="bulleted-list"><li style="list-style-type:square">Côte de Beaune: <mark class="highlight-blue">Meursault AOC,</mark> <mark class="highlight-blue">Puligny-Montrachet AOC</mark></li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="13242035-4316-833c-b117-816273342104" class="bulleted-list"><li style="list-style-type:circle">Mâconnais: <mark class="highlight-blue">Pouilly-Fuissé</mark> AOC</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="aea42035-4316-828c-b5cb-8110c3d60661" class="bulleted-list"><li style="list-style-type:disc"><strong>Australia:</strong> Victoria: <mark class="highlight-blue">Yarra Valley</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="56042035-4316-8279-8ce0-01cd1c3b1f8d" class="bulleted-list"><li style="list-style-type:disc"><strong>S. Africa: </strong>W. Cape: <mark class="highlight-blue">Walker Bay</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="68142035-4316-8266-bd0a-81a432816157" class="bulleted-list"><li style="list-style-type:disc"><strong>NZ: </strong><mark class="highlight-blue">Hawkes Bay（Ch）</mark></li></ul></div><div style="display:contents" dir="auto"><hr id="8d542035-4316-8288-8286-818db57bdd81"/></div><div style="display:contents" dir="auto"><p id="15242035-4316-8388-8316-81fcf3bcd1c1" class="">Common Region <mark class="highlight-blue">Sauvignon Blanc &amp; Chardonay</mark>: </p></div><div style="display:contents" dir="auto"><p id="8ee42035-4316-82f1-9fb8-01d5043b69b3" class=""><strong>Chile</strong>: Casablanca Valley</p></div><div style="display:contents" dir="auto"><p id="b1642035-4316-8331-91db-01d160cfc4d0" class=""><strong>California</strong>: Sonoma, Los Carneros, Napa Valley, Santa Barbara</p></div><div style="display:contents" dir="auto"><p id="40742035-4316-822d-a9d2-01e11ae5e86f" class=""><strong>Australia</strong>: New South Wales, SE Australia, Tasmania, S. Australia:<mark class="highlight-blue"> Adelaide Hills</mark></p></div><div style="display:contents" dir="auto"><ul id="23842035-4316-83df-9e1f-8171ad467189" class="toggle"><li><details open=""><summary>Map</summary><div style="display:contents" dir="auto"><div id="d7f42035-4316-8371-abf9-01e41601af9c" class="column-list"><div style="display:contents" dir="auto"><div id="b3042035-4316-83f3-816c-81ddae3ed804" style="width:50%" class="column"><div style="display:contents" dir="ltr"><figure id="82142035-4316-82f9-a4b8-81705544a5a4" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-02-25_at_11.53.38_AM.png"><img style="width:384px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-02-25_at_11.53.38_AM.png"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="52e42035-4316-8294-a534-81e14a0861b2" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-03-11_at_3.52.09_PM.png"><img style="width:384px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-03-11_at_3.52.09_PM.png"/></a></figure></div><div style="display:contents" dir="auto"><p id="c4342035-4316-8253-af2c-817c1bdeb76f" class="">
+</p></div></div></div><div style="display:contents" dir="auto"><div id="fcb42035-4316-8291-8caa-0110155fa83b" style="width:50%" class="column"><div style="display:contents" dir="ltr"><figure id="28242035-4316-82fd-96ed-814b712b18f8" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-02-25_at_11.53.47_AM.png"><img style="width:384px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-02-25_at_11.53.47_AM.png"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="0e842035-4316-82e6-b87a-015af1ed137c" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-03-11_at_3.54.16_PM.png"><img style="width:384px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-03-11_at_3.54.16_PM.png"/></a></figure></div></div></div></div></div></details></li></ul></div></div></details></div><div style="display:contents" dir="auto"><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0"><strong>SAUVIGNON BLANC 长相思</strong></summary><div class="indented"><div style="display:contents" dir="auto"><ul id="c3042035-4316-8330-9c2c-0170b8f92c0a" class="bulleted-list"><li style="list-style-type:disc">cool to moderate</li></ul></div><div style="display:contents" dir="auto"><ul id="ded42035-4316-8343-a0f3-8130442b863a" class="bulleted-list"><li style="list-style-type:disc"><strong>Least ripe:</strong> grapefruit, lemon, stones, <mark class="highlight-blue">green pepper, grass</mark>, asparagus</li></ul></div><div style="display:contents" dir="auto"><ul id="56642035-4316-83bf-8fed-01beff53fc13" class="bulleted-list"><li style="list-style-type:disc"><strong>Moderate ripe:</strong> floral, gooseberry, green apple</li></ul></div><div style="display:contents" dir="auto"><ul id="28e42035-4316-8339-8112-01621c2a9fe1" class="bulleted-list"><li style="list-style-type:disc"><strong>Most ripe:</strong> peach, passionfruit</li></ul></div><div style="display:contents" dir="auto"><ul id="e7342035-4316-838a-84fb-814eb98fab72" class="bulleted-list"><li style="list-style-type:disc">Aromatic variety - <mark class="highlight-blue">herbaceous</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="25442035-4316-83ac-b533-81a73ebf4284" class="bulleted-list"><li style="list-style-type:disc">High acid - typically dry</li></ul></div><div style="display:contents" dir="auto"><ul id="0a442035-4316-8201-9e5b-0122fcb1d2de" class="bulleted-list"><li style="list-style-type:disc">Typically unoaked and single varietal</li></ul></div><div style="display:contents" dir="auto"><ul id="c3342035-4316-8389-8662-8186dfaa975c" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue">Sometimes blended with Sémillon （Pessac-Léognan ， Oaked）</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="cde42035-4316-83ed-a809-810211502b0a" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue"><strong>Typically early drinking - youthful</strong></mark></li></ul></div><div style="display:contents" dir="auto"><hr id="66542035-4316-8380-86f0-01bd84c5fbe8"/></div><div style="display:contents" dir="auto"><ul id="26d42035-4316-83c5-9c44-0173a2f55eb1" class="bulleted-list"><li style="list-style-type:disc"><strong>France:</strong> <div style="display:contents" dir="auto"><ul id="8d042035-4316-83c2-84de-015f8e8f46bb" class="bulleted-list"><li style="list-style-type:circle"><mark class="highlight-blue">Loire Valley: Sancerre AOC, Pouilly-Fumé AOC （</mark>smoke 矿物感<mark class="highlight-blue">）</mark><div style="display:contents" dir="auto"><ul id="12442035-4316-82d0-a3e9-01f668e403c3" class="bulleted-list"><li style="list-style-type:square">还有一个Vouvray AOC - Chanin Blanc</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="e8242035-4316-8383-bb0e-01b1b0e91525" class="bulleted-list"><li style="list-style-type:circle"><mark class="highlight-blue">Bordeaux</mark><mark class="highlight-default"> - Left bank 左岸</mark><mark class="highlight-blue">: Graves, Pessac-Léognan (Finger Nail Oaked mix with Semillon)</mark></li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="6d642035-4316-8381-958c-81984ec6c9f0" class="bulleted-list"><li style="list-style-type:disc"><strong>S. Africa: </strong>W. Cape: <mark class="highlight-blue">Constantia</mark>, <mark class="highlight-blue">Elgin</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="39a42035-4316-826c-bc87-01844ecd25a0" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue"><strong>NZ:  </strong></mark><mark class="highlight-blue">Marlborough （SB）</mark></li></ul></div><div style="display:contents" dir="auto"><hr id="56042035-4316-83de-ac1e-8110fd49b5a5"/></div><div style="display:contents" dir="auto"><p id="87342035-4316-8308-b53b-819af6119b99" class="">Common Region Sauvignon Blanc &amp; Chardonay: </p></div><div style="display:contents" dir="auto"><p id="9e142035-4316-8264-bce2-0176c9649916" class=""><strong>Chile</strong>: Casablanca Valley</p></div><div style="display:contents" dir="auto"><p id="bb342035-4316-825f-a0e9-81efe368d884" class=""><strong>California</strong>: Sonoma, Los Carneros, Napa Valley, Santa Barbara</p></div><div style="display:contents" dir="auto"><p id="61c42035-4316-8351-8e7b-0104aeb101ed" class=""><strong>Australia</strong>: New South Wales, SE Australia, Tasmania, S. Australia: Adelaide Hills</p></div><div style="display:contents" dir="auto"><p id="6dd42035-4316-8379-87c4-01dc2973e6c7" class="">
+</p></div><div style="display:contents" dir="auto"><ul id="53c42035-4316-8273-8ce5-019e6211954e" class="toggle"><li><details open=""><summary>Map</summary><div style="display:contents" dir="auto"><div id="5cf42035-4316-823f-b693-815482761969" class="column-list"><div style="display:contents" dir="auto"><div id="53c42035-4316-83fe-830e-811335992204" style="width:50%" class="column"><div style="display:contents" dir="ltr"><figure id="3c642035-4316-83cd-90f2-81e3f17876ec" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-02-25_at_12.20.02_PM.png"><img style="width:709.9921875px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-02-25_at_12.20.02_PM.png"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="5b342035-4316-82ca-b6fd-810a580789ec" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-02-25_at_12.20.31_PM.png"><img style="width:709.9921875px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-02-25_at_12.20.31_PM.png"/></a></figure></div></div></div><div style="display:contents" dir="auto"><div id="5c442035-4316-83ac-b852-018dacd2fd35" style="width:50%" class="column"><div style="display:contents" dir="ltr"><figure id="a3342035-4316-83e3-a4c1-01a8610bb476" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-02-25_at_12.20.10_PM.png"><img style="width:709.9921875px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-02-25_at_12.20.10_PM.png"/></a></figure></div><div style="display:contents" dir="auto"><p id="3bb42035-4316-8380-8297-01011d1c064f" class="">
+</p></div></div></div></div></div></details></li></ul></div></div></details></div><div style="display:contents" dir="auto"><hr id="96042035-4316-83e1-8a6d-8173ab2a7bbd"/></div><div style="display:contents" dir="auto"><h2 id="b1942035-4316-83f5-8dd0-816421cfbaec" class="">Spain</h2></div><div style="display:contents" dir="ltr"><table id="2f942035-4316-8273-bc41-0132151af1ff" class="simple-table"><thead class="simple-table-header"><div style="display:contents" dir="ltr"><tr id="cde42035-4316-82d4-8a11-016c644066bc"><th id="^c;F" class="simple-table-header-color simple-table-header">等级</th><th id="tz?Z" class="simple-table-header-color simple-table-header">中文</th><th id="P@KY" class="simple-table-header-color simple-table-header">时间要求</th><th id="w@Sj" class="simple-table-header-color simple-table-header" style="width:462px">风味特点</th></tr></div></thead><tbody><div style="display:contents" dir="ltr"><tr id="9ea42035-4316-82dd-bb59-01f922a51405"><td id="^c;F" class=""><strong>Joven / Tinto Joven</strong></td><td id="tz?Z" class="">年轻酒</td><td id="P@KY" class="">几乎无陈年</td><td id="w@Sj" class="" style="width:462px">🍓 Fruity（新鲜红果，如草莓）</td></tr></div><div style="display:contents" dir="ltr"><tr id="16342035-4316-8206-a9e0-8144486bbe25"><td id="^c;F" class=""><strong>Crianza</strong></td><td id="tz?Z" class="">陈酿</td><td id="P@KY" class="">≥ 1.5 年（含橡木）</td><td id="w@Sj" class="" style="width:462px">🌿 Oak（橡木）、Vanilla（香草）、Smoke（烟熏）</td></tr></div><div style="display:contents" dir="ltr"><tr id="bd042035-4316-82ec-aae7-01138e7b9821"><td id="^c;F" class=""><strong>Reserva</strong></td><td id="tz?Z" class="">珍藏</td><td id="P@KY" class="">≥ 3 年</td><td id="w@Sj" class="" style="width:462px">🍇 Dried fruit（干果）、Caramel（焦糖）、Leather（皮革）</td></tr></div><div style="display:contents" dir="ltr"><tr id="6ee42035-4316-8264-87d3-017acccb3c5b"><td id="^c;F" class=""><strong>Gran Reserva</strong></td><td id="tz?Z" class="">特级珍藏</td><td id="P@KY" class="">≥ 5 年</td><td id="w@Sj" class="" style="width:462px">🍄 Mushroom（蘑菇）、Truffle（松露）、Earthy（泥土）</td></tr></div></tbody></table></div><div style="display:contents" dir="auto"><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0"><strong>ALBARIÑO 阿尔巴利诺</strong></summary><div class="indented"><div style="display:contents" dir="auto"><ul id="07942035-4316-8269-a4ca-0118d3b167c1" class="bulleted-list"><li style="list-style-type:disc">High acid</li></ul></div><div style="display:contents" dir="auto"><ul id="28c42035-4316-833a-a596-81a542371314" class="bulleted-list"><li style="list-style-type:disc">Medium body</li></ul></div><div style="display:contents" dir="auto"><ul id="13942035-4316-8317-8226-813234d94d08" class="bulleted-list"><li style="list-style-type:disc">Fruit: citrus (lemon, grapefruit), stone fruit (peach, apricot)</li></ul></div><div style="display:contents" dir="auto"><ul id="d1e42035-4316-82d4-a51e-010ad42cd467" class="bulleted-list"><li style="list-style-type:disc">Dry</li></ul></div><div style="display:contents" dir="auto"><ul id="13e42035-4316-83dc-8fc3-81ef023e7cb3" class="bulleted-list"><li style="list-style-type:disc">Unoaked or oaked -<mark class="highlight-blue"> usually Unoaked</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="b8342035-4316-821b-b252-01c344dee187" class="bulleted-list"><li style="list-style-type:disc">Single varietal - <mark class="highlight-blue">youthful</mark></li></ul></div><div style="display:contents" dir="auto"><hr id="b0c42035-4316-83c9-b6ca-0147b8dbc084"/></div><div style="display:contents" dir="auto"><ul id="ce742035-4316-8270-ae60-010b89293e01" class="bulleted-list"><li style="list-style-type:disc"><strong>Spain:</strong> <mark class="highlight-blue">Rías Baixas DO</mark> (NW 稍微凉快点)</li></ul></div><div style="display:contents" dir="auto"><ul id="afb42035-4316-8222-8e4d-8176651b718e" class="toggle"><li><details open=""><summary>Map</summary><div style="display:contents" dir="ltr"><figure id="08e42035-4316-828c-8ea7-01967b8e0a2c" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-03-30_at_10.44.23_PM.png"><img style="width:535.9921875px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-03-30_at_10.44.23_PM.png"/></a></figure></div></details></li></ul></div></div></details></div><div style="display:contents" dir="auto"><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0"><strong>TEMPRANILLO 丹魄</strong></summary><div class="indented"><div style="display:contents" dir="auto"><ul id="c1342035-4316-82ef-a256-812c26c746d5" class="bulleted-list"><li style="list-style-type:disc">moderate to warm</li></ul></div><div style="display:contents" dir="auto"><ul id="8cb42035-4316-8379-bdd1-818b5e541bbb" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue">Medium acid</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="03542035-4316-82fe-b7ed-8113552a1b23" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue">Medium tannins (Med like merlot)</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="7f442035-4316-8271-8298-01fa68e37cdd" class="bulleted-list"><li style="list-style-type:disc">Red fruit: strawberry, red cherry</li></ul></div><div style="display:contents" dir="auto"><ul id="30342035-4316-829a-85ee-81346f19a3c1" class="bulleted-list"><li style="list-style-type:disc">Black fruit: blackberry, black plum</li></ul></div><div style="display:contents" dir="auto"><ul id="13f42035-4316-8358-ab7d-81f0f603e82b" class="bulleted-list"><li style="list-style-type:disc">Simple or complex</li></ul></div><div style="display:contents" dir="auto"><ul id="ef742035-4316-822b-a31c-81ad77a7eddc" class="bulleted-list"><li style="list-style-type:disc">Light-full body</li></ul></div><div style="display:contents" dir="auto"><ul id="9cc42035-4316-8389-a23e-01af8d696cef" class="bulleted-list"><li style="list-style-type:disc">Oaked or unoaked</li></ul></div><div style="display:contents" dir="auto"><ul id="7d942035-4316-8365-954b-01a27c64df42" class="bulleted-list"><li style="list-style-type:disc">Blended or single variety</li></ul></div><div style="display:contents" dir="auto"><ul id="00742035-4316-829e-8196-8106ca711183" class="bulleted-list"><li style="list-style-type:disc">AGE WORTHY: dried fruit, leather, mushroom</li></ul></div><div style="display:contents" dir="auto"><hr id="20142035-4316-8255-9a1c-8132ee3db128"/></div><div style="display:contents" dir="auto"><ul id="52842035-4316-83a1-a05b-81a883d97a7a" class="bulleted-list"><li style="list-style-type:disc"><strong>Spain:</strong> <mark class="highlight-blue">Rioja DOCa</mark>, <mark class="highlight-blue">Ribera del Duero DO</mark>, <mark class="highlight-blue">Catalunya DO</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="0f742035-4316-82c7-a4db-013a5451f278" class="toggle"><li><details open=""><summary>Map</summary><div style="display:contents" dir="ltr"><figure id="39c42035-4316-8275-a8a2-81334cfd5c70" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-03-30_at_11.37.19_PM.png"><img style="width:650.9921875px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-03-30_at_11.37.19_PM.png"/></a></figure></div></details></li></ul></div></div></details></div><div style="display:contents" dir="auto"><hr id="bd142035-4316-8348-8d90-819702157e78"/></div><div style="display:contents" dir="auto"><h2 id="60a42035-4316-8394-a52f-01fb30c197bd" class="">Hungary</h2></div><div style="display:contents" dir="auto"><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0"><strong>FURMINT 福尔明特</strong></summary><div class="indented"><div style="display:contents" dir="auto"><ul id="2b942035-4316-83ee-8347-8173268259bc" class="bulleted-list"><li style="list-style-type:disc">Moderate</li></ul></div><div style="display:contents" dir="auto"><ul id="f0242035-4316-83f2-851d-01d392c27b13" class="bulleted-list"><li style="list-style-type:disc"><strong>Just ripe:</strong> pear, lemon-lime, peach, nectarine</li></ul></div><div style="display:contents" dir="auto"><ul id="62542035-4316-82ed-b728-019c9df02c4d" class="bulleted-list"><li style="list-style-type:disc"><strong>Extra ripe:</strong> peach, apricot, pineapple, mango, dried fruit, caramel, nuts</li></ul></div><div style="display:contents" dir="auto"><ul id="e3842035-4316-8228-9cbd-01fa20eb1791" class="bulleted-list"><li style="list-style-type:disc">High acid</li></ul></div><div style="display:contents" dir="auto"><ul id="68542035-4316-827c-a20f-81983b13dfab" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue">Botrytis</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="54c42035-4316-82e7-a889-01bc3802764b" class="bulleted-list"><li style="list-style-type:disc">Dry to sweet: harvest options</li></ul></div><div style="display:contents" dir="auto"><ul id="4b542035-4316-82a6-83cd-819fef32353f" class="bulleted-list"><li style="list-style-type:disc">Oaked or unoaked</li></ul></div><div style="display:contents" dir="auto"><ul id="f1342035-4316-836a-9db3-819f1d611394" class="bulleted-list"><li style="list-style-type:disc">AGE WORTHY</li></ul></div><div style="display:contents" dir="auto"><ul id="9e042035-4316-8275-8dc1-812d2e0b5e66" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue">Puttonyos to count sweet level</mark></li></ul></div><div style="display:contents" dir="auto"><hr id="76a42035-4316-8359-976c-015bf86fdee3"/></div><div style="display:contents" dir="auto"><ul id="dc742035-4316-8248-9cdd-01f37b191328" class="bulleted-list"><li style="list-style-type:disc"><strong>Hungary:</strong> <mark class="highlight-blue">Tokaji</mark></li></ul></div></div></details></div><div style="display:contents" dir="auto"><hr id="55b42035-4316-83c4-8e48-012504470644"/></div><div style="display:contents" dir="auto"><h2 id="f3242035-4316-836e-a883-8179da8ac25b" class="">France</h2></div><div style="display:contents" dir="auto"><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0"><strong>GAMAY 佳美</strong></summary><div class="indented"><div style="display:contents" dir="auto"><ul id="03a42035-4316-8323-8baf-81ffbcb33c83" class="bulleted-list"><li style="list-style-type:disc">High acid</li></ul></div><div style="display:contents" dir="auto"><ul id="cf342035-4316-83ee-bf17-010050da76ff" class="bulleted-list"><li style="list-style-type:disc">Low-medium tannin</li></ul></div><div style="display:contents" dir="auto"><ul id="05c42035-4316-8323-ae58-01ff7114f21f" class="bulleted-list"><li style="list-style-type:disc">Red fruit: raspberry, red cherry, red plum</li></ul></div><div style="display:contents" dir="auto"><ul id="8f042035-4316-8254-8d1c-81ad99f7efaf" class="bulleted-list"><li style="list-style-type:disc">Typically light body</li></ul></div><div style="display:contents" dir="auto"><ul id="42a42035-4316-8364-9fd5-813c3e5428d0" class="bulleted-list"><li style="list-style-type:disc">Typically unoaked</li></ul></div><div style="display:contents" dir="auto"><ul id="28642035-4316-83aa-bf58-81830e778c80" class="bulleted-list"><li style="list-style-type:disc">Some winemaking aromas <mark class="highlight-blue">(Carbonic Maceration): banana and candy</mark><div style="display:contents" dir="auto"><ul id="4d042035-4316-8322-8316-8114064c47a4" class="bulleted-list"><li style="list-style-type:circle"><mark class="highlight-blue">Meant for early consumption</mark></li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="44942035-4316-835b-8b76-011653c65b88" class="bulleted-list"><li style="list-style-type:disc">France: Beaujolais AOC, <mark class="highlight-blue">Beaujolais Village AOC, Fleurie AOC </mark>(Cru Beaujolais)</li></ul></div><div style="display:contents" dir="auto"><ul id="4ee42035-4316-83f0-989b-01f7def40ef2" class="toggle"><li><details open=""><summary>map</summary><div style="display:contents" dir="ltr"><figure id="8be42035-4316-825f-8331-817862c9a10b" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-03-30_at_9.31.08_PM.png"><img style="width:497.9921875px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-03-30_at_9.31.08_PM.png"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="7fe42035-4316-830c-8677-8126138207cc" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-03-30_at_9.31.22_PM.png"><img style="width:497.9921875px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-03-30_at_9.31.22_PM.png"/></a></figure></div></details></li></ul></div><div style="display:contents" dir="auto"><ul id="be942035-4316-837e-a0de-81a8cd900d36" class="bulleted-list"><li style="list-style-type:disc">WHAT IS CARBONIC MACERATION: intra-cellular fermentation, no yeast, oxygen is displaced by Carbon Dioxide and whole clusters are placed in a closed tank. Grape sugars are triggered by enzymes to start fermenting… only about 4% alcohol, then the tank is opened and fermentation is finished with yeast addtion.</li></ul></div></div></details></div><div style="display:contents" dir="auto"><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0"><strong>VIOGNIER 维欧尼</strong></summary><div class="indented"><div style="display:contents" dir="auto"><ul id="bde42035-4316-8261-a8ad-018be494ff6d" class="bulleted-list"><li style="list-style-type:disc">Aromatic variety</li></ul></div><div style="display:contents" dir="auto"><ul id="fc842035-4316-826c-b407-01fbe91a5612" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue">Low-medium acid (GGV)</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="61e42035-4316-83d1-b98a-811ed153c7a7" class="bulleted-list"><li style="list-style-type:disc">High alcohol</li></ul></div><div style="display:contents" dir="auto"><ul id="81f42035-4316-839b-b0b0-01c9462c4e6a" class="bulleted-list"><li style="list-style-type:disc">Stone fruit: peach, apricot, quince, floral blossoms</li></ul></div><div style="display:contents" dir="auto"><ul id="fa042035-4316-821b-b4f2-01123524c74c" class="bulleted-list"><li style="list-style-type:disc">Dry</li></ul></div><div style="display:contents" dir="auto"><ul id="3e042035-4316-838d-9a76-0156ca13a79a" class="bulleted-list"><li style="list-style-type:disc">Medium-full body</li></ul></div><div style="display:contents" dir="auto"><ul id="51c42035-4316-8397-b951-0162980c3964" class="bulleted-list"><li style="list-style-type:disc">Oaked or unoaked</li></ul></div><div style="display:contents" dir="auto"><ul id="10a42035-4316-82aa-adca-0136c7b6d1d3" class="bulleted-list"><li style="list-style-type:disc">Single variety or blended</li></ul></div><div style="display:contents" dir="auto"><hr id="35b42035-4316-834a-8680-8131e43d19aa"/></div><div style="display:contents" dir="auto"><ul id="4d342035-4316-82b9-922b-012c7073ca9f" class="bulleted-list"><li style="list-style-type:disc"><strong>France:</strong> <mark class="highlight-blue">Northern Rhône</mark>: <mark class="highlight-blue">Condrieu</mark> AOC (E-Central)</li></ul></div><div style="display:contents" dir="auto"><ul id="a7942035-4316-83e9-a84c-01d5dbc36c81" class="toggle"><li><details open=""><summary>Map</summary><div style="display:contents" dir="auto"><div id="49b42035-4316-82c0-8d7a-818477542527" class="column-list"><div style="display:contents" dir="auto"><div id="c5642035-4316-825c-b384-01766b679a2b" style="width:50%" class="column"><div style="display:contents" dir="ltr"><figure id="1df42035-4316-833b-99f2-814adc32ed4f" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-03-30_at_10.43.19_PM.png"><img style="width:497.9921875px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-03-30_at_10.43.19_PM.png"/></a></figure></div></div></div><div style="display:contents" dir="auto"><div id="d4942035-4316-83f3-9834-01b5fe2fb9bc" style="width:50%" class="column"><div style="display:contents" dir="ltr"><figure id="9e042035-4316-83a2-af1e-010c9a415184" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-03-30_at_10.43.27_PM.png"><img style="width:217.9921875px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-03-30_at_10.43.27_PM.png"/></a></figure></div></div></div></div></div></details></li></ul></div></div></details></div><div style="display:contents" dir="auto"><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0"><strong>GEWÜRZTRAMINER 琼瑶浆</strong></summary><div class="indented"><div style="display:contents" dir="auto"><ul id="88d42035-4316-8371-b1e0-01d9e55f1afc" class="bulleted-list"><li style="list-style-type:disc">Aromatic variety: <mark class="highlight-blue">lychee</mark>, floral, apricot, peach</li></ul></div><div style="display:contents" dir="auto"><ul id="7ef42035-4316-8307-89fc-810a57be0916" class="bulleted-list"><li style="list-style-type:disc">Low-medium acid</li></ul></div><div style="display:contents" dir="auto"><ul id="6e942035-4316-825d-b3c2-8137232a985a" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue">Floral</mark>: rose</li></ul></div><div style="display:contents" dir="auto"><ul id="2f542035-4316-8340-9570-01cd880971de" class="bulleted-list"><li style="list-style-type:disc">Stone fruit and tropical fruit</li></ul></div><div style="display:contents" dir="auto"><ul id="bc942035-4316-8396-81aa-818b62803d7d" class="bulleted-list"><li style="list-style-type:disc">Dry to sweet</li></ul></div><div style="display:contents" dir="auto"><ul id="4fd42035-4316-8300-9c9c-81d61fd05174" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue">Full body</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="14f42035-4316-8339-ae1d-01fdefed84ea" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue">Typically unoaked</mark></li></ul></div><div style="display:contents" dir="auto"><hr id="1f942035-4316-82f2-86d7-81937dd70b12"/></div><div style="display:contents" dir="auto"><ul id="e1742035-4316-8258-9b21-81f5b48a0bf1" class="bulleted-list"><li style="list-style-type:disc"><strong>France:</strong> Alsace<div style="display:contents" dir="auto"><ul id="f5e42035-4316-836d-891c-81dbe29d61fd" class="bulleted-list"><li style="list-style-type:circle">Alsace AOC</li></ul></div><div style="display:contents" dir="auto"><ul id="13c42035-4316-820f-b1cb-8158b35b8fe0" class="bulleted-list"><li style="list-style-type:circle">Grand Cru AOC</li></ul></div><div style="display:contents" dir="auto"><ul id="c2642035-4316-826c-9a6b-812b1e65f14d" class="bulleted-list"><li style="list-style-type:circle"><mark class="highlight-blue">Vendanges Tardives (dry or sweet) - Picked Late</mark></li></ul></div></li></ul></div></div></details></div><div style="display:contents" dir="auto"><hr id="cf942035-4316-836c-87df-81ecd652cc86"/></div><div style="display:contents" dir="auto"><h1 id="53442035-4316-827e-b358-8114cef45913" class="">Italy</h1></div><div style="display:contents" dir="auto"><ul id="0bb42035-4316-8245-aa4e-015ac8cfcbec" class="toggle"><li><details open=""><summary>Map</summary><div style="display:contents" dir="ltr"><figure id="00242035-4316-8316-97cf-01c2014fe58c" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-03-31_at_12.18.53_AM.png"><img style="width:528px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-03-31_at_12.18.53_AM.png"/></a></figure></div><div style="display:contents" dir="auto"><div id="c1c42035-4316-820b-b6a6-81eda57eb3d8" class="column-list"><div style="display:contents" dir="auto"><div id="8f042035-4316-82a8-969f-0169f64460be" style="width:50%" class="column"><div style="display:contents" dir="ltr"><figure id="db342035-4316-8249-862e-012ba73325ba" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-03-31_at_12.20.36_AM.png"><img style="width:301.9921875px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-03-31_at_12.20.36_AM.png"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="c0042035-4316-825e-8760-812634e9bbf8" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-03-31_at_12.21.28_AM.png"><img style="width:301.9921875px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-03-31_at_12.21.28_AM.png"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="da742035-4316-822b-9caa-015326b07d43" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-03-31_at_12.21.19_AM.png"><img style="width:301.9921875px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-03-31_at_12.21.19_AM.png"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="f8642035-4316-8377-826e-012b98c4da5d" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-03-31_at_12.21.02_AM.png"><img style="width:236.9921875px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-03-31_at_12.21.02_AM.png"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="2c242035-4316-8215-bed2-0178f1d4fc52" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-03-31_at_12.24.32_AM.png"><img style="width:301.9921875px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-03-31_at_12.24.32_AM.png"/></a></figure></div></div></div><div style="display:contents" dir="auto"><div id="06b42035-4316-83e9-a2bf-816aa3bdb030" style="width:50%" class="column"><div style="display:contents" dir="ltr"><figure id="fc842035-4316-8261-9dc9-814b05fd0a18" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-03-31_at_12.20.56_AM.png"><img style="width:302px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-03-31_at_12.20.56_AM.png"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="cd342035-4316-8300-89df-01dfc8f6f41b" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-03-31_at_12.21.38_AM.png"><img style="width:301.984375px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-03-31_at_12.21.38_AM.png"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="62742035-4316-8376-af90-81fa2cbd65d4" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-03-31_at_12.24.22_AM.png"><img style="width:301.984375px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-03-31_at_12.24.22_AM.png"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="08242035-4316-83d3-bfbb-81c668f9dcaa" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-03-31_at_12.24.01_AM.png"><img style="width:301.9921875px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-03-31_at_12.24.01_AM.png"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="d8142035-4316-8266-92be-010ff6125928" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-03-31_at_12.21.09_AM.png"><img style="width:301.9921875px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-03-31_at_12.21.09_AM.png"/></a></figure></div><div style="display:contents" dir="auto"><p id="1c342035-4316-835b-8608-8136fbea89ff" class="">
+</p></div></div></div></div></div></details></li></ul></div><div style="display:contents" dir="auto"><p id="31642035-4316-8375-a35b-818a6ed54122" class="">White:</p></div><div style="display:contents" dir="ltr"><table id="c8d42035-4316-8355-8ccf-01c6f42ebbd4" class="simple-table"><thead class="simple-table-header"><div style="display:contents" dir="ltr"><tr id="7b242035-4316-8382-bdf3-81871f7a6f5f"><th id="Z&lt;hK" class="simple-table-header-color simple-table-header">Grape 葡萄</th><th id="dGVG" class="simple-table-header-color simple-table-header">Region 产区</th><th id="\u~&lt;" class="simple-table-header-color simple-table-header">Climate </th><th id="PVxB" class="simple-table-header-color simple-table-header" style="width:58px">Acid</th><th id="Yl@E" class="simple-table-header-color simple-table-header" style="width:72px">Body</th><th id="d`&lt;S" class="simple-table-header-color simple-table-header" style="width:189px">Key Flavors 风味</th><th id="ezP:" class="simple-table-header-color simple-table-header">Style 风格</th><th id="y_R[" class="simple-table-header-color simple-table-header" style="width:184px">Aging 陈年</th></tr></div></thead><tbody><div style="display:contents" dir="ltr"><tr id="28742035-4316-839e-8ed0-81b09db5858e"><td id="Z&lt;hK" class=""><strong>Cortese <br/>科尔特赛</strong></td><td id="dGVG" class="">Piedmont – Gavi DOCG</td><td id="\u~&lt;" class="">Moderate</td><td id="PVxB" class="" style="width:58px">High</td><td id="Yl@E" class="" style="width:72px">Light</td><td id="d`&lt;S" class="" style="width:189px">Green fruit (apple, pear), lemon, <mark class="highlight-blue">floral</mark></td><td id="ezP:" class="">Dry, unoaked</td><td id="y_R[" class="" style="width:184px">  • Early drinking</td></tr></div><div style="display:contents" dir="ltr"><tr id="e1742035-4316-838a-80ec-812a76a2e249"><td id="Z&lt;hK" class=""><strong>Garganega<br/>加尔加内加</strong></td><td id="dGVG" class="">Veneto – Soave DOC</td><td id="\u~&lt;" class="">Moderate</td><td id="PVxB" class="" style="width:58px">High</td><td id="Yl@E" class="" style="width:72px">Medium</td><td id="d`&lt;S" class="" style="width:189px">Green fruit: apple, pear, citrus: lemon</td><td id="ezP:" class="">Dry / <br/><mark class="highlight-blue">Sweet (Recioto di Soave)</mark></td><td id="y_R[" class="" style="width:184px">  • Early  drinking<br/>  • Some age-worthy (honey, almond)</td></tr></div><div style="display:contents" dir="ltr"><tr id="4c042035-4316-83c0-ab88-014f20e458fe"><td id="Z&lt;hK" class=""><strong>Verdicchio<br/>维蒂奇奥</strong></td><td id="dGVG" class="">Marche – Verdicchio dei Castelli di Jesi DOC</td><td id="\u~&lt;" class="">Moderate</td><td id="PVxB" class="" style="width:58px">High</td><td id="Yl@E" class="" style="width:72px">Medium</td><td id="d`&lt;S" class="" style="width:189px">Apple, lemon, fennel (herbal)</td><td id="ezP:" class="">Dry , unoaked</td><td id="y_R[" class="" style="width:184px">  • Early drinking<br/>  • Some age-worthy (honey, almond)</td></tr></div><div style="display:contents" dir="ltr"><tr id="52e42035-4316-8369-b1b5-01fbabee7d27"><td id="Z&lt;hK" class=""><strong>Fiano<br/>菲亚诺</strong></td><td id="dGVG" class="">Campania – Fiano di Avellino DOC</td><td id="\u~&lt;" class="">Moderate–Warm</td><td id="PVxB" class="" style="width:58px">Medium</td><td id="Yl@E" class="" style="width:72px">Med–Full</td><td id="d`&lt;S" class="" style="width:189px">  • Stone fruit: peach<br/>  • Tropcial fruit: melon, mango</td><td id="ezP:" class="">Dry, oaked/unoaked, lees</td><td id="y_R[" class="" style="width:184px">  • Early drinking<br/>  • Some age-worthy (honey, almond)</td></tr></div></tbody></table></div><div style="display:contents" dir="auto"><p id="b5042035-4316-82b5-9920-01f49ba891ff" class="">Red:</p></div><div style="display:contents" dir="ltr"><table id="9be42035-4316-83fe-9d4e-8136c91f33cc" class="simple-table"><thead class="simple-table-header"><div style="display:contents" dir="ltr"><tr id="23642035-4316-82cd-b93b-81d8fb267152"><th id="[C=m" class="simple-table-header-color simple-table-header">Grape 葡萄</th><th id="nTwO" class="simple-table-header-color simple-table-header">Region 产区</th><th id="}GxL" class="simple-table-header-color simple-table-header">Climate</th><th id=";&gt;bv" class="simple-table-header-color simple-table-header" style="width:69px">Acid </th><th id="F:kE" class="simple-table-header-color simple-table-header" style="width:90px">Tannin</th><th id="gFN`" class="simple-table-header-color simple-table-header" style="width:78.0625px">Body</th><th id="LFp[" class="simple-table-header-color simple-table-header" style="width:212px">Key Flavors 风味</th><th id="W@_J" class="simple-table-header-color simple-table-header" style="width:108px">Style 风格</th><th id="U[Q`" class="simple-table-header-color simple-table-header" style="width:182px">Aging 陈年</th><th id="I`Kn" class="simple-table-header-color simple-table-header" style="width:326px"></th></tr></div></thead><tbody><div style="display:contents" dir="ltr"><tr id="5ee42035-4316-8238-901d-01eca133afea"><td id="[C=m" class=""><strong>Nebbiolo<br/>内比奥罗</strong></td><td id="nTwO" class="">Piedmont – Barolo DOCG, Barbaresco DOCG</td><td id="}GxL" class="">Moderate–Warm</td><td id=";&gt;bv" class="" style="width:69px">High</td><td id="F:kE" class="" style="width:90px">High</td><td id="gFN`" class="" style="width:78.0625px">Full</td><td id="LFp[" class="" style="width:212px">  • Floral: rose, violet<br/>  • Herbal: dried herbs<br/>  • Red fruit: red cherry, red plum</td><td id="W@_J" class="" style="width:108px">Single varietal, oaked</td><td id="U[Q`" class="" style="width:182px">High (tobacco, leather, mushroom)</td><td id="I`Kn" class="" style="width:326px"></td></tr></div><div style="display:contents" dir="ltr"><tr id="ea242035-4316-8352-974c-811d8f7b3dd8"><td id="[C=m" class=""><strong>Barbera <br/>巴贝拉</strong></td><td id="nTwO" class="">Piedmont – Barbera d’Asti DOCG</td><td id="}GxL" class="">Moderate–Warm</td><td id=";&gt;bv" class="" style="width:69px">High (Super)</td><td id="F:kE" class="" style="width:90px">Low–Med</td><td id="gFN`" class="" style="width:78.0625px">Medium</td><td id="LFp[" class="" style="width:212px">  • Red fruit: red cherry, red plum, <br/>  • black pepper spice</td><td id="W@_J" class="" style="width:108px">Blend or varietal</td><td id="U[Q`" class="" style="width:182px">Medium (dried fruit, herbs)</td><td id="I`Kn" class="" style="width:326px"></td></tr></div><div style="display:contents" dir="ltr"><tr id="a2e42035-4316-8306-923f-81e12dd120f5"><td id="[C=m" class=""><strong>Corvina <br/>科维纳</strong></td><td id="nTwO" class=""><strong>Veneto: -Valpolicella Classico DOC, Amarone DOCG, Recioto della Valpolicella DOCG</strong></td><td id="}GxL" class="">Moderate–Warm</td><td id=";&gt;bv" class="" style="width:69px">High</td><td id="F:kE" class="" style="width:90px">Low–Med</td><td id="gFN`" class="" style="width:78.0625px">Med–Full</td><td id="LFp[" class="" style="width:212px">  • Red fruit: red cherry, red plum</td><td id="W@_J" class="" style="width:108px">Blends common</td><td id="U[Q`" class="" style="width:182px"><strong>  • Vapolicella DOC </strong> for early consumption<br/>  • High (dried fruit, meat)</td><td id="I`Kn" class="" style="width:326px">Appasimento 干水果(withering the fruit by drying it on straw or hanging) method used for <br/>  • <strong>Amarone della Valpolicella DOCG (Dry &amp; H-Alchol 16%+)<br/>  • Recioto della Valpolicella DOCG （sweet）</strong></td></tr></div><div style="display:contents" dir="ltr"><tr id="67a42035-4316-8218-9ac8-819b5e3447e0"><td id="[C=m" class=""><strong>Sangiovese<br/>桑娇维塞</strong></td><td id="nTwO" class="">Tuscany – Chianti DOCG<br/><strong>Brunello di Montalcino DOCG</strong></td><td id="}GxL" class="">Moderate–Warm</td><td id=";&gt;bv" class="" style="width:69px">High</td><td id="F:kE" class="" style="width:90px">High</td><td id="gFN`" class="" style="width:78.0625px">Med–Full</td><td id="LFp[" class="" style="width:212px">  • Herbal: dried herbs<br/>  • Red fruit: red cherry, red plum<br/>  • (Nebbiolo)</td><td id="W@_J" class="" style="width:108px">Often blended</td><td id="U[Q`" class="" style="width:182px">  • Youthful early drinking versions<br/>  • AGE WORTHY: tobacco, mushroom, leather</td><td id="I`Kn" class="" style="width:326px"></td></tr></div><div style="display:contents" dir="ltr"><tr id="b2c42035-4316-83eb-a376-81266eba34f8"><td id="[C=m" class=""><strong>Montepulciano蒙特普齐亚诺</strong></td><td id="nTwO" class="">Abruzzo – Montepulciano d’Abruzzo DOC</td><td id="}GxL" class="">Moderate–Warm</td><td id=";&gt;bv" class="" style="width:69px">Medium</td><td id="F:kE" class="" style="width:90px">High</td><td id="gFN`" class="" style="width:78.0625px">Med–Full</td><td id="LFp[" class="" style="width:212px">Black fruit: black cherry, black plum</td><td id="W@_J" class="" style="width:108px">Blend or varietal</td><td id="U[Q`" class="" style="width:182px">Usually early</td><td id="I`Kn" class="" style="width:326px">Pizza Wine</td></tr></div></tbody></table></div><div style="display:contents" dir="auto"><hr id="1c142035-4316-8237-ae10-8134f69f32ca"/></div><div style="display:contents" dir="auto"><h1 id="e8242035-4316-8348-841d-818ac99497ba" class="">Warm</h1></div><div style="display:contents" dir="auto"><h2 id="94142035-4316-825b-b660-016c4e744677" class="">South Africa</h2></div><div style="display:contents" dir="auto"><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0"><strong>PINOTAGE 皮诺塔吉</strong></summary><div class="indented"><div style="display:contents" dir="auto"><ul id="59442035-4316-834d-afb8-01ce604e2981" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue">Warm</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="90642035-4316-82a8-8e83-81de53c61042" class="bulleted-list"><li style="list-style-type:disc">High acid</li></ul></div><div style="display:contents" dir="auto"><ul id="8f542035-4316-83a6-badf-019d17299b9b" class="bulleted-list"><li style="list-style-type:disc">Medium tannin</li></ul></div><div style="display:contents" dir="auto"><ul id="46d42035-4316-8362-b172-0119ab04a13e" class="bulleted-list"><li style="list-style-type:disc">Red fruit: strawberry, raspberry, red cherry</li></ul></div><div style="display:contents" dir="auto"><ul id="05e42035-4316-8377-b638-815557fa9ac3" class="bulleted-list"><li style="list-style-type:disc">Medium-full body</li></ul></div><div style="display:contents" dir="auto"><ul id="97442035-4316-83a4-8fc9-0108e02a2d24" class="bulleted-list"><li style="list-style-type:disc">When oaked can absorb strong aromas: <mark class="highlight-blue">coffee, chocolate, smoke (bbq)</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="8ad42035-4316-82c4-a142-813591b27860" class="bulleted-list"><li style="list-style-type:disc">AGE WORTHY: dried fruit, meat, caramel</li></ul></div><div style="display:contents" dir="auto"><ul id="fc642035-4316-8325-bfa8-01844cafff29" class="bulleted-list"><li style="list-style-type:disc">Blended or single varietal</li></ul></div><div style="display:contents" dir="auto"><hr id="f6842035-4316-8307-a2cb-81b61cf08426"/></div><div style="display:contents" dir="auto"><ul id="87742035-4316-83ac-842d-81779b00e6e4" class="bulleted-list"><li style="list-style-type:disc"><strong>South Africa:</strong> <mark class="highlight-blue">Western Cape</mark></li></ul></div></div></details></div><div style="display:contents" dir="auto"><h2 id="7b442035-4316-82c6-99bd-8150689eb882" class="">Chile</h2></div><div style="display:contents" dir="auto"><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0"><strong>CARMENÈRE 佳美娜</strong></summary><div class="indented"><div style="display:contents" dir="auto"><ul id="4f742035-4316-83f4-ab55-81cca69e1aa6" class="bulleted-list"><li style="list-style-type:disc">和cabernet Sauvignon是亲戚</li></ul></div><div style="display:contents" dir="auto"><ul id="11842035-4316-8294-92c9-0121ca2acb1d" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue">Warm</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="6e642035-4316-8224-a97e-810831c76751" class="bulleted-list"><li style="list-style-type:disc">Medium-high acid</li></ul></div><div style="display:contents" dir="auto"><ul id="58a42035-4316-82dc-9959-01b3b0203353" class="bulleted-list"><li style="list-style-type:disc">High tannin</li></ul></div><div style="display:contents" dir="auto"><ul id="de042035-4316-8298-8414-81e84e6ca9af" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue">Herbaceous: green bell pepper, eucalyptus</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="58542035-4316-8341-8220-015e96f9a87d" class="bulleted-list"><li style="list-style-type:disc">Black fruit: blackberry, black plum</li></ul></div><div style="display:contents" dir="auto"><ul id="eb742035-4316-826c-a7db-81cf8e4c7f4c" class="bulleted-list"><li style="list-style-type:disc">Full body</li></ul></div><div style="display:contents" dir="auto"><ul id="0bf42035-4316-838a-bed1-01a10e2b97d7" class="bulleted-list"><li style="list-style-type:disc">Often oaked</li></ul></div><div style="display:contents" dir="auto"><ul id="6ea42035-4316-837d-9ad3-01f47f75426d" class="bulleted-list"><li style="list-style-type:disc">Blended or single varietal</li></ul></div><div style="display:contents" dir="auto"><ul id="e1f42035-4316-8346-8f86-813c08e87820" class="bulleted-list"><li style="list-style-type:disc">AGE WORTHY: leather, earth</li></ul></div><div style="display:contents" dir="auto"><hr id="32f42035-4316-832f-8c13-8142386e4299"/></div><div style="display:contents" dir="auto"><ul id="55f42035-4316-820d-8ee5-0184091cd30f" class="bulleted-list"><li style="list-style-type:disc"><strong>Chile:</strong> <mark class="highlight-blue">Central Valley</mark><div style="display:contents" dir="ltr"><figure id="07642035-4316-83a5-b028-81a942b5d6e2" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-03-30_at_11.54.17_PM.png"><img style="width:288px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-03-30_at_11.54.17_PM.png"/></a></figure></div></li></ul></div></div></details></div><div style="display:contents" dir="auto"><h2 id="b1e42035-4316-83a5-87ac-81dc602dad40" class="">Argentina</h2></div><div style="display:contents" dir="auto"><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0"><strong>MALBEC 马尔贝克</strong></summary><div class="indented"><div style="display:contents" dir="auto"><ul id="d0542035-4316-82d2-a075-81b647c8bb9e" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue">Warm</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="1b142035-4316-8345-a434-813302e5c241" class="bulleted-list"><li style="list-style-type:disc">High tannin</li></ul></div><div style="display:contents" dir="auto"><ul id="08542035-4316-8254-98a4-81eda2216002" class="bulleted-list"><li style="list-style-type:disc">Medium acid</li></ul></div><div style="display:contents" dir="auto"><ul id="85d42035-4316-83d9-aa84-01c002264bc2" class="bulleted-list"><li style="list-style-type:disc">Black fruit: blackberry, black plum</li></ul></div><div style="display:contents" dir="auto"><ul id="f3742035-4316-826d-b4a6-017881a97984" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue">Full body</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="90042035-4316-8206-b53c-01be84f4ef0d" class="bulleted-list"><li style="list-style-type:disc">Often oaked</li></ul></div><div style="display:contents" dir="auto"><ul id="83542035-4316-83e0-b163-81de9ad1a190" class="bulleted-list"><li style="list-style-type:disc">AGE WORTHY: dried fruit, meat</li></ul></div><div style="display:contents" dir="auto"><ul id="18b42035-4316-8394-9a0d-01adbf733631" class="bulleted-list"><li style="list-style-type:disc">Blended or single varietal</li></ul></div><div style="display:contents" dir="auto"><hr id="75c42035-4316-829e-be38-81bfad9cd059"/></div><div style="display:contents" dir="auto"><ul id="09e42035-4316-83d5-8bab-814768f6f23d" class="bulleted-list"><li style="list-style-type:disc"><strong>Argentina:</strong> <mark class="highlight-blue">Mendoza</mark><div style="display:contents" dir="ltr"><figure id="61942035-4316-8368-be0f-81823a940fc3" class="image"><a href="All%20Grapes%20Study%20Guide/Screenshot_2026-03-30_at_11.53.44_PM.png"><img style="width:288px" src="All%20Grapes%20Study%20Guide/Screenshot_2026-03-30_at_11.53.44_PM.png"/></a></figure></div></li></ul></div></div></details></div></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
