@@ -1,5 +1,6 @@
 import { useState, lazy, Suspense } from 'react';
 import { levelFrac } from '../data/helpers';
+import { MAP_IMAGES } from '../data/mapImages';
 
 const MiniMap = lazy(() => import('./MiniMap'));
 
@@ -218,6 +219,28 @@ export default function GrapeCard({ grape, isComparing, onToggleCompare, default
                 ))}
               </div>
             </>
+          )}
+
+          {/* Study Maps */}
+          {grape.maps && grape.maps.length > 0 && (
+            <div className="study-maps">
+              <div className="loc-section-label">Study Maps</div>
+              <div className="study-maps-scroll">
+                {grape.maps.map((filename, i) => {
+                  const src = MAP_IMAGES[filename];
+                  if (!src) return null;
+                  return (
+                    <img
+                      key={i}
+                      src={src}
+                      alt={filename.replace(/Screenshot_|_at_|_PM|_AM|\.png/g, ' ').trim()}
+                      className="study-map-img"
+                      loading="lazy"
+                    />
+                  );
+                })}
+              </div>
+            </div>
           )}
         </div>
       )}

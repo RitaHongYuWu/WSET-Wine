@@ -19,8 +19,8 @@
     "flavors": {
       "unripe": [
         "Green Fruit",
-        "Cirtus",
-        "Flora"
+        "Citrus",
+        "Floral"
       ],
       "ripe": [
         "Stone Fruit"
@@ -33,7 +33,7 @@
     "blendGrape": null,
     "botrytis": true,
     "sparkling": false,
-    "notes": "Can be dry to sweet; often aromatic;  Late harvest to make ice wine;",
+    "notes": "Highly aromatic; can be dry to sweet; late harvest for ice wine; unoaked; steely minerality in cool sites",
     "locations": [
       {
         "country": "Germany",
@@ -56,6 +56,11 @@
           "Clare Valley"
         ]
       }
+    ],
+    "maps": [
+      "Screenshot_2026-02-18_at_2.39.15_PM.png",
+      "Screenshot_2026-02-18_at_2.39.43_PM.png",
+      "Screenshot_2026-02-18_at_2.40.50_PM.png"
     ]
   },
   {
@@ -78,7 +83,7 @@
     "flavors": {
       "unripe": [
         "Green Fruit",
-        "Cirtus"
+        "Citrus"
       ],
       "ripe": [
         "Stone Fruit"
@@ -91,7 +96,7 @@
     "blendGrape": null,
     "botrytis": true,
     "sparkling": false,
-    "notes": "Can be dry, sweet,",
+    "notes": "Highly versatile; dry to sweet, still to sparkling; oaked or unoaked; high acidity supports ageing",
     "locations": [
       {
         "country": "France",
@@ -108,7 +113,8 @@
           "Western Cape"
         ]
       }
-    ]
+    ],
+    "maps": []
   },
   {
     "id": "semillon",
@@ -145,7 +151,7 @@
     "blendGrape": "Sauvignon Blanc",
     "botrytis": true,
     "sparkling": false,
-    "notes": "Important in dry and sweet styles; Botrytis;",
+    "notes": "Dry to sweet; famous oaked blend with Sauvignon Blanc in Bordeaux (Graves / Pessac-Léognan); botrytis for Sauternes",
     "locations": [
       {
         "country": "France",
@@ -153,7 +159,9 @@
           "Bordeaux"
         ],
         "subregions": [
-          "Sauternes"
+          "Sauternes",
+          "Graves",
+          "Pessac-Léognan"
         ]
       },
       {
@@ -161,8 +169,14 @@
         "regions": [
           "Hunter Valley",
           "Barossa Valley"
-        ]
+        ],
+        "subregions": []
       }
+    ],
+    "maps": [
+      "Screenshot_2026-02-18_at_2.43.24_PM.png",
+      "Screenshot_2026-02-18_at_2.43.46_PM.png",
+      "Screenshot_2026-02-18_at_2.44.29_PM.png"
     ]
   },
   {
@@ -199,7 +213,8 @@
           "Tokaj"
         ]
       }
-    ]
+    ],
+    "maps": []
   },
   {
     "id": "chardonnay",
@@ -221,7 +236,7 @@
     "flavors": {
       "unripe": [
         "Green Fruit",
-        "Cirtus",
+        "Citrus",
         "Wet Stone"
       ],
       "ripe": [
@@ -294,6 +309,13 @@
           "Walker Bay"
         ]
       }
+    ],
+    "maps": [
+      "Screenshot_2026-02-25_at_11.53.38_AM.png",
+      "Screenshot_2026-02-25_at_11.53.47_AM.png",
+      "Screenshot_2026-03-11_at_3.52.09_PM.png",
+      "Screenshot_2026-03-11_at_3.54.16_PM.png",
+      "Screenshot_2026-03-09_at_2.47.34_PM.png"
     ]
   },
   {
@@ -315,10 +337,9 @@
     "ageNotes": null,
     "flavors": {
       "unripe": [
-        "Herbaceous(Grass",
+        "Grass",
         "Green bell pepper",
-        ")",
-        "Green Fruits"
+        "Green Fruit"
       ],
       "ripe": [
         "Lemon",
@@ -326,15 +347,14 @@
         "Stone Fruit"
       ],
       "extraRipe": [
-        "Tropical fruit(Passion fruit",
-        ")"
+        "Passion Fruit"
       ]
     },
     "blend": "Rare",
     "blendGrape": "Chenin Blanc",
     "botrytis": false,
     "sparkling": false,
-    "notes": "Aromatic; pungent styles common",
+    "notes": "Aromatic; typically dry; sometimes blended with Sémillon in Bordeaux (Pessac-Léognan, oaked); unoaked for Loire and NZ styles",
     "locations": [
       {
         "country": "France",
@@ -385,6 +405,11 @@
           "Elgin"
         ]
       }
+    ],
+    "maps": [
+      "Screenshot_2026-02-25_at_12.20.02_PM.png",
+      "Screenshot_2026-02-25_at_12.20.10_PM.png",
+      "Screenshot_2026-02-25_at_12.20.31_PM.png"
     ]
   },
   {
@@ -422,7 +447,7 @@
     "blendGrape": null,
     "botrytis": false,
     "sparkling": false,
-    "notes": "Styles range from light neutral to richer aromatic",
+    "notes": "Italian style: light, neutral and fresh; Friuli style is richer and more complex",
     "locations": [
       {
         "country": "Italy",
@@ -437,7 +462,8 @@
           "Alsace"
         ]
       }
-    ]
+    ],
+    "maps": []
   },
   {
     "id": "pinot-gris",
@@ -469,9 +495,9 @@
     },
     "blend": "Rare",
     "blendGrape": null,
-    "botrytis": false,
+    "botrytis": true,
     "sparkling": false,
-    "notes": null,
+    "notes": "Alsace style: full-bodied and aromatic; Vendanges Tardives (late harvest, dry to sweet); botrytis possible",
     "locations": [
       {
         "country": "France",
@@ -479,7 +505,8 @@
           "Alsace"
         ]
       }
-    ]
+    ],
+    "maps": []
   },
   {
     "id": "cortese",
@@ -522,6 +549,10 @@
           "Gavi"
         ]
       }
+    ],
+    "maps": [
+      "Screenshot_2026-03-31_at_12.18.53_AM.png",
+      "Screenshot_2026-03-31_at_12.20.36_AM.png"
     ]
   },
   {
@@ -566,10 +597,14 @@
         ],
         "subregions": [
           "Soave",
-          "Soave Classio",
-          "Recioto Di Saove"
+          "Soave Classico",
+          "Recioto di Soave"
         ]
       }
+    ],
+    "maps": [
+      "Screenshot_2026-03-31_at_12.18.53_AM.png",
+      "Screenshot_2026-03-31_at_12.20.56_AM.png"
     ]
   },
   {
@@ -602,7 +637,7 @@
       ]
     },
     "blend": "Rare",
-    "blendGrape": "Appassimento",
+    "blendGrape": null,
     "botrytis": false,
     "sparkling": false,
     "notes": "High acidity; can age better than many Italian whites",
@@ -616,6 +651,10 @@
           "Verdicchio dei Castelli di Jesi"
         ]
       }
+    ],
+    "maps": [
+      "Screenshot_2026-03-31_at_12.18.53_AM.png",
+      "Screenshot_2026-03-31_at_12.21.02_AM.png"
     ]
   },
   {
@@ -660,6 +699,10 @@
           "Fiano di Avellino"
         ]
       }
+    ],
+    "maps": [
+      "Screenshot_2026-03-31_at_12.18.53_AM.png",
+      "Screenshot_2026-03-31_at_12.21.09_AM.png"
     ]
   },
   {
@@ -695,7 +738,7 @@
     "blendGrape": null,
     "botrytis": false,
     "sparkling": false,
-    "notes": "Highly aromatic; naturally deep colour; low acidity",
+    "notes": "Highly aromatic; naturally deep colour; low acidity; Vendanges Tardives (late harvest, dry to sweet); Grand Cru Alsace",
     "locations": [
       {
         "country": "France",
@@ -703,7 +746,8 @@
           "Alsace"
         ]
       }
-    ]
+    ],
+    "maps": []
   },
   {
     "id": "viognier",
@@ -745,6 +789,10 @@
           "Condrieu"
         ]
       }
+    ],
+    "maps": [
+      "Screenshot_2026-03-30_at_10.43.19_PM.png",
+      "Screenshot_2026-03-30_at_10.43.27_PM.png"
     ]
   },
   {
@@ -787,6 +835,9 @@
           "Rías Baixas"
         ]
       }
+    ],
+    "maps": [
+      "Screenshot_2026-03-30_at_10.44.23_PM.png"
     ]
   },
   {
@@ -820,7 +871,7 @@
     "blendGrape": null,
     "botrytis": false,
     "sparkling": false,
-    "notes": "Ripens unevenly; Rose",
+    "notes": "Ripens unevenly; very high sugars; makes red, rosé (White Zinfandel) and dried-grape styles; White Zinfandel is a simple fruity rosé",
     "locations": [
       {
         "country": "USA",
@@ -834,7 +885,8 @@
           "Puglia"
         ]
       }
-    ]
+    ],
+    "maps": []
   },
   {
     "id": "grenache---garnacha",
@@ -865,7 +917,7 @@
     "blendGrape": "Syrah; Tempranillo",
     "botrytis": false,
     "sparkling": false,
-    "notes": "Very high sugar; often used in blends; can make rosé; thin skin",
+    "notes": "Very high sugar; thin skin; often blended with Syrah (GSM) or Tempranillo in Spain; can make dry rosé",
     "locations": [
       {
         "country": "Spain",
@@ -891,6 +943,11 @@
           "Mclaren Valley"
         ]
       }
+    ],
+    "maps": [
+      "Screenshot_2026-03-30_at_11.26.00_PM.png",
+      "Screenshot_2026-03-30_at_11.26.11_PM.png",
+      "Screenshot_2026-03-30_at_11.27.09_PM.png"
     ]
   },
   {
@@ -912,7 +969,9 @@
     "ageNotes": "Mushroom; Forest floor;",
     "flavors": {
       "unripe": [
-        "Red Fruit(Strawberry, Rasberry, red cherry)"
+        "Strawberry",
+        "Raspberry",
+        "Red Cherry"
       ],
       "ripe": [],
       "extraRipe": []
@@ -974,6 +1033,15 @@
           "Central Otago"
         ]
       }
+    ],
+    "maps": [
+      "Screenshot_2026-02-18_at_2.27.18_PM.png",
+      "Screenshot_2026-02-18_at_2.27.54_PM.png",
+      "Screenshot_2026-02-18_at_2.30.46_PM.png",
+      "Screenshot_2026-02-18_at_2.31.04_PM.png",
+      "Screenshot_2026-02-18_at_2.40.36_PM.png",
+      "Screenshot_2026-03-09_at_2.47.34_PM.png",
+      "Screenshot_2026-03-11_at_3.58.03_PM.png"
     ]
   },
   {
@@ -1003,7 +1071,7 @@
       ],
       "extraRipe": [
         "Dried Fruit",
-        "Tabacco"
+        "Tobacco"
       ]
     },
     "blend": "Yes",
@@ -1034,7 +1102,7 @@
         ]
       },
       {
-        "country": "Chilie",
+        "country": "Chile",
         "regions": [
           "Central Valley"
         ]
@@ -1057,6 +1125,17 @@
           "Hawke's Bay"
         ]
       }
+    ],
+    "maps": [
+      "Screenshot_2026-03-30_at_10.55.13_PM.png",
+      "Screenshot_2026-03-31_at_11.33.23_AM.png",
+      "Screenshot_2026-03-31_at_11.33.49_AM.png",
+      "Screenshot_2026-03-31_at_11.33.56_AM.png",
+      "Screenshot_2026-03-31_at_11.34.02_AM.png",
+      "Screenshot_2026-03-31_at_11.34.09_AM.png",
+      "Screenshot_2026-03-31_at_11.34.16_AM.png",
+      "Screenshot_2026-03-31_at_11.34.27_AM.png",
+      "Screenshot_2026-03-31_at_11.34.34_AM.png"
     ]
   },
   {
@@ -1075,7 +1154,7 @@
     "body": null,
     "oak": "Yes",
     "canAge": true,
-    "ageNotes": "drired Fruit; Earth; Forest Floor",
+    "ageNotes": "Dried Fruit; Earth; Forest Floor",
     "flavors": {
       "unripe": [
         "Green bell pepper",
@@ -1088,10 +1167,10 @@
       ]
     },
     "blend": "Yes",
-    "blendGrape": "Cape Blend; Pinotage",
+    "blendGrape": "Merlot",
     "botrytis": false,
     "sparkling": false,
-    "notes": "Thick skin; late ripening;",
+    "notes": "Thick skin; late ripening; often oaked; Bordeaux Grand Cru Classé ranks châteaux (not vineyards) — Left Bank Médoc and Pessac-Léognan only; often blended with Merlot",
     "locations": [
       {
         "country": "France",
@@ -1117,7 +1196,7 @@
         ]
       },
       {
-        "country": "Chilie",
+        "country": "Chile",
         "regions": [
           "Central Valley (Maipo Valley",
           "Colchagua Valley)"
@@ -1142,6 +1221,17 @@
           "Hawke's Bay"
         ]
       }
+    ],
+    "maps": [
+      "Screenshot_2026-03-30_at_10.55.13_PM.png",
+      "Screenshot_2026-03-31_at_11.33.23_AM.png",
+      "Screenshot_2026-03-31_at_11.33.49_AM.png",
+      "Screenshot_2026-03-31_at_11.33.56_AM.png",
+      "Screenshot_2026-03-31_at_11.34.02_AM.png",
+      "Screenshot_2026-03-31_at_11.34.09_AM.png",
+      "Screenshot_2026-03-31_at_11.34.16_AM.png",
+      "Screenshot_2026-03-31_at_11.34.27_AM.png",
+      "Screenshot_2026-03-31_at_11.34.34_AM.png"
     ]
   },
   {
@@ -1160,7 +1250,7 @@
     "body": null,
     "oak": "Yes",
     "canAge": true,
-    "ageNotes": "drired Fruit; Leather; Meat; Earth",
+    "ageNotes": "Dried Fruit; Leather; Meat; Earth",
     "flavors": {
       "unripe": [
         "Black pepper",
@@ -1180,18 +1270,18 @@
     "blendGrape": "Grenache; Rhone Blend",
     "botrytis": false,
     "sparkling": false,
-    "notes": "Can be savoury or rich depending on climate; ThiCh skin",
+    "notes": "Can be savoury (cool, Northern Rhône) or rich (warm, Barossa); thick skin; often blended with Grenache (GSM blend); co-fermented with Viognier in Côte Rôtie",
     "locations": [
       {
         "country": "France",
         "regions": [
-          "Bordeaux"
+          "Rhône"
         ],
         "subregions": [
-          "Northern Rhône (Cote Rotie",
+          "Côte Rôtie",
           "Hermitage",
-          "Crozes-Hermitage)",
-          "Languedoc-Roussillon(Minervois)"
+          "Crozes-Hermitage",
+          "Languedoc-Roussillon"
         ]
       },
       {
@@ -1204,6 +1294,10 @@
           "Hunter Valley"
         ]
       }
+    ],
+    "maps": [
+      "Screenshot_2026-03-30_at_11.18.25_PM.png",
+      "Screenshot_2026-03-30_at_11.18.32_PM.png"
     ]
   },
   {
@@ -1249,6 +1343,10 @@
           "Fleurie"
         ]
       }
+    ],
+    "maps": [
+      "Screenshot_2026-03-30_at_9.31.08_PM.png",
+      "Screenshot_2026-03-30_at_9.31.22_PM.png"
     ]
   },
   {
@@ -1290,6 +1388,9 @@
           "Catalunya"
         ]
       }
+    ],
+    "maps": [
+      "Screenshot_2026-03-30_at_11.37.19_PM.png"
     ]
   },
   {
@@ -1323,7 +1424,7 @@
     "blendGrape": "Cabernet Sauvignon; Merlot",
     "botrytis": false,
     "sparkling": false,
-    "notes": "Often shows herbaceous notes, Very strong Green pepper flavor",
+    "notes": "Genetic cousin of Cabernet Sauvignon; rediscovered in Chile; often shows herbaceous and green pepper notes; can be very tannic",
     "locations": [
       {
         "country": "Chile",
@@ -1334,6 +1435,9 @@
           "Santiago"
         ]
       }
+    ],
+    "maps": [
+      "Screenshot_2026-03-30_at_11.54.17_PM.png"
     ]
   },
   {
@@ -1343,7 +1447,7 @@
     "color": "Red",
     "climate": {
       "label": "Warm",
-      "min": 4,
+      "min": "H",
       "max": "H"
     },
     "acidity": null,
@@ -1372,6 +1476,9 @@
           "Mendoza"
         ]
       }
+    ],
+    "maps": [
+      "Screenshot_2026-03-30_at_11.53.44_PM.png"
     ]
   },
   {
@@ -1403,7 +1510,7 @@
     "blendGrape": "Cabernet Sauvignon; Merlot",
     "botrytis": false,
     "sparkling": false,
-    "notes": "South African crossing of Pinot Noir and Cinsault; Cape Blend",
+    "notes": "South African crossing of Pinot Noir and Cinsault; key grape in Cape Blend; when oaked can show coffee, chocolate and smoky (BBQ) aromas",
     "locations": [
       {
         "country": "South Africa",
@@ -1411,7 +1518,8 @@
           "Western Cape"
         ]
       }
-    ]
+    ],
+    "maps": []
   },
   {
     "id": "nebbiolo",
@@ -1432,9 +1540,11 @@
     "ageNotes": "Tobacco; Leather; Mushroom",
     "flavors": {
       "unripe": [
-        "Red Fruit(Red Cherry, Red plum)",
-        "Herbal(Dried herb)",
-        "Floral(Rese, violet)"
+        "Red Cherry",
+        "Red Plum",
+        "Dried Herb",
+        "Rose",
+        "Violet"
       ],
       "ripe": [],
       "extraRipe": []
@@ -1455,6 +1565,10 @@
           "Barbaresco"
         ]
       }
+    ],
+    "maps": [
+      "Screenshot_2026-03-31_at_12.18.53_AM.png",
+      "Screenshot_2026-03-31_at_12.21.19_AM.png"
     ]
   },
   {
@@ -1497,6 +1611,10 @@
           "Barbera d'Asti"
         ]
       }
+    ],
+    "maps": [
+      "Screenshot_2026-03-31_at_12.18.53_AM.png",
+      "Screenshot_2026-03-31_at_12.21.28_AM.png"
     ]
   },
   {
@@ -1539,6 +1657,10 @@
           "Amarone della Valpolicella"
         ]
       }
+    ],
+    "maps": [
+      "Screenshot_2026-03-31_at_12.18.53_AM.png",
+      "Screenshot_2026-03-31_at_12.21.38_AM.png"
     ]
   },
   {
@@ -1556,13 +1678,13 @@
     "sweetness": null,
     "body": "Medium-Full",
     "oak": "Yes",
-    "canAge": false,
+    "canAge": true,
     "ageNotes": "Leather; Tobacco; Earth",
     "flavors": {
       "unripe": [
-        "Red Fruit(Cherry",
-        "Plum)",
-        "Herbal(Dried Herbs)"
+        "Red Cherry",
+        "Plum",
+        "Dried Herbs"
       ],
       "ripe": [],
       "extraRipe": []
@@ -1582,10 +1704,12 @@
           "Chianti",
           "Brunello di Montalcino"
         ]
-      },
-      {
-        "country": "Italy"
       }
+    ],
+    "maps": [
+      "Screenshot_2026-03-31_at_12.18.53_AM.png",
+      "Screenshot_2026-03-31_at_12.24.01_AM.png",
+      "Screenshot_2026-03-31_at_12.24.22_AM.png"
     ]
   },
   {
@@ -1628,6 +1752,10 @@
           "Montepulciano d'Abruzzo"
         ]
       }
+    ],
+    "maps": [
+      "Screenshot_2026-03-31_at_12.18.53_AM.png",
+      "Screenshot_2026-03-31_at_12.24.32_AM.png"
     ]
   }
 ]
